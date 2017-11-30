@@ -1,0 +1,48 @@
+.container {
+  text-align: center;
+  h2 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0;
+    color: #999;
+  }
+}
+.sidebarImg {
+  max-width: 85%;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  border: 4px solid transparent;
+
+  &:hover {
+    border-color: rgba(0, 187, 255, 0.5);
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+}
+
+.active {
+  border-color: rgba(0, 187, 255, 0.5);
+}
+
+.tags {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 15px 20px 30px 20px;
+  &:hover {
+    border: 2px solid #fff;
+    transition: all 400ms;
+  }
+}
+
+.tagActive {
+  border: 3px solid #fff;
+}

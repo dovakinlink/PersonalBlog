@@ -1,0 +1,49 @@
+{
+  "name": "little-a-dashboard",
+  "version": "0.0.1",
+  "description": "Base on React.js、Ant Design、dva.js、roadhog",
+  "dependencies": {
+    "antd": "2.12.2",
+    "classnames": "^2.2.5",
+    "dva": "^1.2.1",
+    "dva-loading": "^0.2.1",
+    "echarts-for-react": "^1.4.4",
+    "google-map-react": "^0.24.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "nprogress": "^0.2.0",
+    "react": "^15.6.1",
+    "react-cookie": "^2.0.8",
+    "react-countup": "^2.1.1",
+    "react-dom": "^15.6.1",
+    "react-quill": "^1.0.0",
+    "react-router": "^4.1.2"
+  },
+  "devDependencies": {
+    "atool-build": "^1.0.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-dva-hmr": "^0.3.2",
+    "babel-plugin-import": "^1.2.1",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-register": "^6.24.1",
+    "babel-runtime": "^6.23.0",
+    "eslint": "^3.9.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "less-vars-to-js": "^1.1.2",
+    "mockjs": "^1.0.1-beta3",
+    "npm-run-all": "^4.0.2",
+    "redbox-react": "^1.4.3",
+    "roadhog": "^0.6.0",
+    "sweetalert2": "^6.6.6"
+  },
+  "scripts": {
+    "start": "roadhog server",
+    "lint": "standard src/**/*.js",
+    "build": "roadhog build"
+  }
+}
