@@ -35,7 +35,7 @@ const Login = ({
       <div className={styles.background} />
       <div className={styles.card}>
         <div className={styles.logo}>
-          <img alt={'logo'} src={config.logo} />
+          <img alt={'logo'} src={config.logo} width="30%" height="30%"/>
           <span>{config.name}</span>
         </div>
         <form>
@@ -46,7 +46,7 @@ const Login = ({
                   required: true
                 }
               ]
-            })(<Input size='large' onPressEnter={handleOk} placeholder='Username' />)}
+            })(<Input size='large' onPressEnter={handleOk} placeholder='用户名/邮箱/手机号' />)}
           </FormItem>
           <FormItem>
             {getFieldDecorator('password', {
@@ -55,13 +55,13 @@ const Login = ({
                   required: true
                 }
               ]
-            })(<Input size='large' type='password' onPressEnter={handleOk} placeholder='Password' />)}
+            })(<Input size='large' type='password' onPressEnter={handleOk} placeholder='密码' />)}
           </FormItem>
           <Row style={{ textAlign: 'center' }}>
             <Button type='dashed' ghost size='large' onClick={handleOk} loading={loginLoading}>
-              SIGN IN
+              登录
             </Button>
-            <p><span>any username or password</span></p>
+            <p><span>juju女王的在线办公系统</span></p>
           </Row>
         </form>
       </div>

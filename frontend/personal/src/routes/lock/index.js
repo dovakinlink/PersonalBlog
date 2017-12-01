@@ -17,12 +17,12 @@ const Lock = ({
       <div className={styles.background} />
       <div className={styles.card}>
         <div className={styles.logo}>
-          <img alt={'logo'} src={config.logo} />
-          <span>Richardson</span>
+          <img alt={'logo'} src={config.logo} width="30%" height="30%" />
+          <span>Dovakin!</span>
         </div>
         <Row style={{ textAlign: 'center' }}>
-          <Input size='large' placeholder='Enter Password' type='password' />
-          <Button type='dashed' ghost size='large' onClick={handleUnLock}>UNLOCK</Button>
+          <Input size='large' placeholder='输入密码以解锁' type='password' />
+          <Button type='dashed' ghost size='large' onClick={handleUnLock}>解锁</Button>
         </Row>
       </div>
     </div>
