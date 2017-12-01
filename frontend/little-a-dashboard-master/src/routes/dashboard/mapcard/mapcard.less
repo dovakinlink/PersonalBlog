@@ -1,0 +1,40 @@
+.showcase {
+  margin-top: 50px;
+  :global {
+    .ant-card {
+      border-radius: 6px;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    }
+    .ant-card-head {
+      border-bottom: 0;
+      border-radius: 6px;
+    }
+    .ant-card-head-title{
+      overflow: visible !important;
+    }
+    .ant-card-body {
+      padding: 24px 24px 0px 24px;
+    }
+  }
+
+  .card-header {
+    color: #FFFFFF;
+    border-radius: 3px;
+    position: relative;
+    top: -20px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+
+    &.yellow {
+      background: linear-gradient(60deg, #ffa726, #fb8c00);
+      box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
+    }
+
+    h4 {
+      color: #FFFFFF;
+      padding: 20px 30px;
+      font-size: 40px;
+    }
+  }
+}

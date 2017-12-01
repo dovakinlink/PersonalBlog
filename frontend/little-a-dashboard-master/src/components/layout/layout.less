@@ -1,0 +1,382 @@
+// layout component style
+@import "../../themes/var.less";
+
+.layout {
+  position: relative;
+  height: 100vh;
+
+  &.responsive {
+    .main {
+      margin-left: 0;
+    }
+  }
+
+  .siderbar {
+    color: #999;
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    overflow: visible;
+    padding-bottom: 24px;
+    transition: @transition-ease-out;
+    box-shadow: @shadow-1;
+
+    .siderbar-bg-img {
+      position: absolute;
+      z-index: 0;
+      height: 100%;
+      width: 100%;
+      display: block;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center center;
+      opacity: 0.3;
+      transition: all 500ms;
+    }
+
+    .logo {
+      padding: 25px 0 20px 0;
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+      position: relative;
+      transition: @transition-ease-out;
+      img {
+        width: 42px;
+        position: absolute;
+        top: 16px;
+        left: 13px;
+      }
+      span {
+        color: rgba(255, 255, 255, 0.8);
+        margin-left: 45px;
+        vertical-align: text-bottom;
+        text-transform: uppercase;
+        display: inline-block;
+        transition: @transition-ease-out;
+      }
+
+      .anticon {
+        transition: @transition-ease-out;
+      }
+    }
+
+    :global {
+      // hidden menu title when app.sidebarFold is true
+      .ant-menu {
+        transition: @transition-ease-out;
+
+        .ant-menu-item,
+        .ant-menu-submenu-title {
+          overflow: hidden;
+          white-space: normal;
+        }
+      }
+    }
+  }
+
+  // red theme
+  .siderbar-bg-red {
+    background-color: @theme-sidebar-bgcolor-red;
+    :global {
+      // override
+      .ant-menu-light {
+        background-color: @theme-sidebar-bgcolor-red;
+        .ant-menu-item-selected {
+          color: #fff !important;
+          background-color: color(@theme-sidebar-bgcolor-red, 20) !important;
+          box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(60, 72, 88, 0.4);
+          > a {
+            color: #fff !important;
+          }
+          &::after {
+            border-right: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  // yellow theme
+  .siderbar-bg-yellow {
+    background-color: @theme-sidebar-bgcolor-yellow;
+    :global {
+      .ant-menu-light {
+        background-color: @theme-sidebar-bgcolor-yellow;
+        .ant-menu-item-selected {
+          color: #fff !important;
+          background-color: @theme-sidebar-bgcolor-yellow !important;
+          box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(60, 72, 88, 0.4);
+          > a {
+            color: #fff !important;
+          }
+          &::after {
+            border-right: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  // black theme
+  .siderbar-bg-black {
+    background-color: @theme-sidebar-bgcolor-black;
+    :global {
+      .ant-menu-light {
+        background-color: @theme-sidebar-bgcolor-black;
+        .ant-menu-item-selected {
+          color: #fff !important;
+          background-color: @theme-sidebar-bgcolor-black !important;
+          box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(60, 72, 88, 0.4);
+          > a {
+            color: #fff !important;
+          }
+          &::after {
+            border-right: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  // blue theme
+  .siderbar-bg-blue {
+    background-color: @theme-sidebar-bgcolor-blue;
+    :global {
+      .ant-menu-light {
+        background-color: @theme-sidebar-bgcolor-blue;
+        .ant-menu-item-selected {
+          color: #fff !important;
+          background-color: @theme-sidebar-bgcolor-blue !important;
+          box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(60, 72, 88, 0.4);
+          > a {
+            color: #fff !important;
+          }
+          &::after {
+            border-right: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  // navbar
+  .navbar {
+
+    .navbar-transparent {
+      background-color: transparent;
+      box-shadow: none;
+      border-bottom: 0;
+    }
+    .navbar-absolute {
+      position: absolute;
+      padding-top: 10px;
+      z-index: 1029;
+    }
+    .navbar-container {
+      padding-top: 25px;
+      padding-right: 15px;
+      padding-left: 20px;
+      margin-right: auto;
+      margin-left: auto;
+
+    }
+    .navbar-right {
+      float: right!important;
+      margin-right: -15px;
+      margin: 0;
+
+      > li {
+        float: left;
+        padding: 5px 16px;
+        list-style: none;
+      }
+    }
+
+    .btn {
+      float: left;
+      height: 43px;
+      width: 43px;
+      font-size: 16px;
+
+      transition: @transition-ease-in;
+      border-radius: 50%;
+      padding: 9px 3px 0 13px;
+      color: #999;
+      background: #fefefe;
+
+      &:hover {
+        cursor: pointer;
+        color: #999 !important;
+        box-shadow: 0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2) !important;
+      }
+    }
+
+  }
+
+  // main
+  .main {
+    margin-left: 260px;
+    overflow: auto;
+    height: 100vh;
+    transition: @transition-ease-out;
+
+    .container {
+      margin-top: 50px;
+      padding: 20px 15px;
+      min-height: calc(100vh - 123px);
+
+      .content {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  // fold
+  &.fold {
+    .siderbar {
+      width: 45px;
+
+      .logo {
+        img {
+          width: 42px;
+          position: absolute;
+          top: 16px;
+          left: 1px;
+        }
+      }
+
+      :global {
+        .ant-menu-root {
+          width: 100%;
+          overflow: visible;
+
+          & > .ant-menu-item {
+            padding: 0;
+            text-align: center;
+
+            .anticon {
+              font-size: @font-size-base;
+              margin-right: 0;
+            }
+          }
+
+          & > .ant-menu-submenu {
+            & > .ant-menu-submenu-title {
+              padding: 0;
+              text-align: center;
+
+              .anticon {
+                font-size: 16px;
+                margin-right: 0;
+              }
+
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .main {
+      margin-left: 50px;
+    }
+  }
+
+
+  :global {
+
+    // override antd menu theme=light style
+    .ant-menu-light {
+      color: rgba(255, 255, 255, 0.8);
+
+      // menu model=line
+      &.ant-menu-inline {
+        border-right: 0 !important;
+        .ant-menu-submenu-selected {
+          color: #fff !important;
+        }
+      }
+
+      // menu model=vertical
+      &.ant-menu-vertical {
+        border-right: 0 !important;
+        .ant-menu-submenu-selected {
+          color: #fff !important;
+        }
+
+        li > a:hover {
+          color: rgba(255, 255, 255, 0.9) !important;
+        }
+      }
+
+      .ant-menu-item {
+        > a {
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+
+      .ant-menu-item:hover {
+        color: #000;
+        background-color: rgba(255,255,255,.1);
+        > a {
+          color: @font-color-base;
+        }
+      }
+
+      .ant-menu-item-selected {
+        color: #999;
+        background-color: @dark-half;
+
+        > a {
+          color: #999 !important;
+          text-decoration: none !important;
+          border-radius: 20px;
+        }
+      }
+
+      .ant-menu-submenu-title:hover,
+      .ant-menu-submenu:hover {
+        color: @font-color-base;
+      }
+
+      .ant-menu-sub {
+        background-color: rgba(90,90,90,.4) !important;
+        li > a {
+          color: rgba(255, 255, 255, 0.8) !important;
+        }
+      }
+
+      .ant-menu-submenu-selected {
+        color: #999;
+        &:not(.ant-menu-submenu-open) {
+          background-color: @dark-half;
+        }
+      }
+
+    }
+  }
+}
+
+.popmenu {
+  width: 180px !important;
+
+  :global .ant-popover-inner-content {
+    padding: 0;
+
+    .ant-menu-inline .ant-menu-item,
+    .ant-menu-vertical .ant-menu-item {
+      border-right: 0;
+      height: 48px;
+      line-height: 48px;
+    }
+
+    .ant-menu-inline .ant-menu-item-selected,
+    .ant-menu-inline .ant-menu-selected {
+      border-right: 0;
+    }
+  }
+}
