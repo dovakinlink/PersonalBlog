@@ -6,6 +6,7 @@ class CreateAdminUser < ActiveRecord::Migration[5.0]
       t.string :account, :comment => "账户"
       t.string :password, null: false, default: ""
       t.integer :state, :comment => "用户状态 1:正常 2:冻结 3:注销"
+      t.timestamps
     end
   end
 end

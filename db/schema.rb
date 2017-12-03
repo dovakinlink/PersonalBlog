@@ -10,17 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171128123826) do
+ActiveRecord::Schema.define(version: 20171203120308) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "admin_roles", force: :cascade do |t|
+    t.string   "code",                    comment: "角色代码"
+    t.string   "title",                   comment: "角色名称"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "admin_user_role_relations", force: :cascade do |t|
+    t.string   "user_id",                 comment: "用户id"
+    t.string   "role_id",                 comment: "角色id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "admin_users", force: :cascade do |t|
-    t.string  "code",                               comment: "用户编号"
-    t.string  "username",                           comment: "用户名"
-    t.string  "account",                            comment: "账户"
-    t.string  "password", default: "", null: false
-    t.integer "state",                              comment: "用户状态 1:正常 2:冻结 3:注销"
+    t.string   "code",                                 comment: "用户编号"
+    t.string   "username",                             comment: "用户名"
+    t.string   "account",                              comment: "账户"
+    t.string   "password",   default: "", null: false
+    t.integer  "state",                                comment: "用户状态 1:正常 2:冻结 3:注销"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
 end
