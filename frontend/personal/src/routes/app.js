@@ -11,7 +11,7 @@ let lastHref
 
 class App extends React.Component {
   render () {
-    const { children, dispatch, app, loading, routes } = this.props
+    const { children, dispatch, app, loading, routes, location } = this.props
     const { sidebarFold, siderRespons, fullScreen, sidebarBgImg, sidebarBgColor, isShowSidebarBgImg, menuResponsVisible } = app
 
     const headerProps = {
@@ -53,6 +53,13 @@ class App extends React.Component {
       onSwitchMenuPopover () {
         dispatch({ type: 'app/switchMenuPopver' })
       }
+    }
+
+    if (location.pathname === '/') {
+      return (
+        <div>{children}</div>
+      )
+    
     }
 
     const siderbarProps = {
