@@ -1,5 +1,6 @@
 import { routerRedux } from 'dva/router'
 import { message } from 'antd'
+import {login} from '../services/admin'
 
 export default {
   namespace: 'login',
@@ -10,7 +11,8 @@ export default {
   effects: {
     * login ({
       payload
-    }, { put }) {
+    }, {call, put }) {
+      const data = yield call(login,payload);
       yield put(routerRedux.push('/dashboard'))
       yield put({ type: 'hideLoginLoading' })
       message.success('Welcome!')

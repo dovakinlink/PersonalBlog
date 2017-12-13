@@ -25,7 +25,11 @@ const Login = ({
       dispatch({ type: 'login/showLoginLoading' })
       // wait for 1.5 seconds on purpose
       setTimeout(() => {
-        dispatch({ type: 'login/login', payload: values })
+        dispatch({ 
+          type: 'login/login', 
+          payload: {
+            user: values
+          }})
       }, 1500)
     })
   }
@@ -40,7 +44,7 @@ const Login = ({
         </div>
         <form>
           <FormItem>
-            {getFieldDecorator('username', {
+            {getFieldDecorator('account', {
               rules: [
                 {
                   required: true
