@@ -1554,3 +1554,12 @@ puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.7ms)
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2017-12-14 22:19:38 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::Admin::SessionsController#create as */*
+  Parameters: {"user"=>{"account"=>"admin", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"account"=>"admin", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "admin"], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 8437ms (Views: 0.4ms | ActiveRecord: 12.1ms)
+
+

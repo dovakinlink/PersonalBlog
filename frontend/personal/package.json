@@ -17,7 +17,8 @@
     "react-countup": "^2.1.1",
     "react-dom": "^15.6.1",
     "react-quill": "^1.0.0",
-    "react-router": "^4.1.2"
+    "react-router": "^4.1.2",
+    "js-cookie": "^2.2.0"
   },
   "devDependencies": {
     "atool-build": "^1.0.0",

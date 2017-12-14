@@ -2,7 +2,6 @@ class Api::Admin::SessionsController < Api::BaseController
     
     # 登录 
     def create
-        binding.pry
         @user = ::Admin::User.find_by(:account => session_params[:account])
         api_error({:message => "用户不存在",:code => 1}) && return if @user.blank?
         # api_error({:message => "密码错误", :code => 1}) && return if @user.password(session_params[:password])

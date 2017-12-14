@@ -65,7 +65,7 @@ const Login = ({
             <Button type='dashed' ghost size='large' onClick={handleOk} loading={loginLoading}>
               登录
             </Button>
-            <p><span>juju女王的在线办公系统</span></p>
+            <p><span></span></p>
           </Row>
         </form>
       </div>

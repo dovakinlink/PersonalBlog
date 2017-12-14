@@ -1,0 +1,44 @@
+:global #toast-root{
+    background-color:rgba(0,0,0,.3);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1997;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  
+  }
+  
+  :global #toast-root.flex {
+    display:flex
+  }
+  
+  :global #toast-root .toast-box{
+    background-color:#fff;
+    padding:20px 25px;
+    border-radius:6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    min-width:200px;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: .3s;
+    transform: translate3d(0, 100%, 0);
+  
+  }
+  :global #toast-root .toast-box .anticon{
+    position:relative;
+    vertical-align:middle;
+    margin-right:10px;
+  
+  }
+  
+  
+  :global #toast-root.fadeInUp .toast-box {
+    opacity: 1;
+    transform: none;
+  }
+  
