@@ -1,0 +1,1 @@
+Rails.application.config.token_expires = 3600
