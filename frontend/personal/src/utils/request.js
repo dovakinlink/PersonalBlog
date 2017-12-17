@@ -1,5 +1,7 @@
 import fetch from 'dva/fetch'
 import querystring from 'querystring'
+import jsonp from 'jsonp'
+import Cookie from '../misc/cookie'
 
 const formatJson = (k, v) => {
   if (v === undefined) {

@@ -18,12 +18,15 @@ export default {
     * login ({
       payload
     }, {call, put }) {
-      const {success,user,message} = yield call(login,payload);
+      yield put({ type: 'showLoginLoading' })
+      debugger
+      const data = yield call(login,payload);
+      debugger
       yield put({ type: 'hideLoginLoading' })
-      if(success){
-        Cookie.set('user_session', user.authentication_token);
-        Cookie.set('user_account', user.account);
-        Cookie.set('user_id', user.id);
+      if(data.success){
+        Cookie.set('user_session', data.user.authentication_token);
+        Cookie.set('user_account', data.user.account);
+        Cookie.set('user_id', data.user.id);
         yield put(routerRedux.push('/dashboard'))
       } else {
           Toast.show(message, {type:"error"})

@@ -22,15 +22,16 @@ const Login = ({
       if (errors) {
         return
       }
-      dispatch({ type: 'login/showLoginLoading' })
+      // dispatch({ 
+      //     type: 'login/showLoginLoading' 
+      // })
       // wait for 1.5 seconds on purpose
-      setTimeout(() => {
-        dispatch({ 
-          type: 'login/login', 
-          payload: {
-            user: values
-          }})
-      }, 1500)
+      dispatch({ 
+        type: 'login/login', 
+        payload: {
+          user: values
+        }
+      })
     })
   }
 
