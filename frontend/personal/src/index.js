@@ -5,6 +5,8 @@ import createLoading from 'dva-loading'
 import { hashHistory } from 'dva/router'
 import { message } from 'antd'
 
+var moment = require('moment');
+
 // 1. Initialize
 const app = dva({
   ...createLoading({
@@ -24,3 +26,7 @@ app.router(require('./router'))
 
 // 4. Start
 app.start('#root')
+
+Object.assign(window, {
+  moment:moment
+})

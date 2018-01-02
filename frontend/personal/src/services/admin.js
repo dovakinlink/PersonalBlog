@@ -1,9 +1,21 @@
-import {get,post} from 'utils';
+import { request } from 'utils'
 
 export async function regist(params){
-    return post("/api/admin/users", params);
+    return request({
+        url: '/api/admin/users',
+        method: 'post',
+        data: {
+            ...params
+        }
+    })
 }
 
 export async function login(params){
-    return post("/api/admin/sessions", params);
+    return request({
+        url: '/api/admin/sessions',
+        method: 'post',
+        data: {
+            ...params
+        }
+    })
 }

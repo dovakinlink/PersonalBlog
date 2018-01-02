@@ -19,9 +19,7 @@ export default {
       payload
     }, {call, put }) {
       yield put({ type: 'showLoginLoading' })
-      debugger
       const data = yield call(login,payload);
-      debugger
       yield put({ type: 'hideLoginLoading' })
       if(data.success){
         Cookie.set('user_session', data.user.authentication_token);

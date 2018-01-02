@@ -1,4 +1,7 @@
 import config from './config'
-import { post, del, put, patch, get } from './request'
+import  request  from './requests'
 
-export { config, post, del, put, patch, get }
+module.exports = {
+    config,
+    request
+}

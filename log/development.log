@@ -1714,3 +1714,83 @@ Processing by Api::Admin::SessionsController#create as */*
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
 
 
+  [1m[35m (36.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (16.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7501268506759722030);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAdminUser (20171203101331)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (20.4ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" serial primary key, "code" character varying, "username" character varying, "account" character varying, "password" character varying DEFAULT '' NOT NULL, "state" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMENT ON COLUMN "admin_users"."code" IS '用户编号'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMENT ON COLUMN "admin_users"."username" IS '用户名'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMENT ON COLUMN "admin_users"."account" IS '账户'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMENT ON COLUMN "admin_users"."state" IS '用户状态 1:正常 2:冻结 3:注销'[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171203101331"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAdminRole (20171203101504)
+  [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE TABLE "admin_roles" ("id" serial primary key, "code" character varying, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMENT ON COLUMN "admin_roles"."code" IS '角色代码'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMENT ON COLUMN "admin_roles"."title" IS '角色名称'[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171203101504"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAdminUserRoleRelation (20171203120308)
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.6ms)[0m  [1m[35mCREATE TABLE "admin_user_role_relations" ("id" serial primary key, "user_id" character varying, "role_id" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMENT ON COLUMN "admin_user_role_relations"."user_id" IS '用户id'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMENT ON COLUMN "admin_user_role_relations"."role_id" IS '角色id'[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171203120308"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAdminUserLog (20171213061257)
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.5ms)[0m  [1m[35mCREATE TABLE "admin_user_logs" ("id" serial primary key, "ip" character varying, "user_id" integer, "username" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMENT ON COLUMN "admin_user_logs"."ip" IS '登录ip'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMENT ON COLUMN "admin_user_logs"."user_id" IS '用户ID'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMENT ON COLUMN "admin_user_logs"."username" IS '用户名称'[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171213061257"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddTokenToAdminUser (20171213061833)
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "admin_users" ADD "authentication_token" character varying[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171213061833"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangePasswordToAdminUser (20171213102336)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "admin_users" RENAME COLUMN "password" TO "password_hash"[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171213102336"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-26 02:19:14.355298"], ["updated_at", "2017-12-26 02:19:14.355298"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7501268506759722030)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2017-12-26 10:24:19 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::Admin::SessionsController#create as */*
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}}}
+  [1m[36mAdmin::User Load (3.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 1], ["username", "刘焕超"], ["created_at", "2017-12-26 02:24:21.310746"], ["updated_at", "2017-12-26 02:24:21.310746"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 148ms (Views: 0.3ms | ActiveRecord: 15.1ms)
+
+
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-02 15:55:38 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (8.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"1", "password"=>"[FILTERED]"}, "t"=>1514879738828, "session"=>{"user"=>{"account"=>"1", "password"=>"[FILTERED]"}, "t"=>1514879738828}}
+  [1m[36mAdmin::User Load (10.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "1"], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 0.2ms | ActiveRecord: 11.6ms)
+
+
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-02 16:48:58 +0800
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1514882934775, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1514882934775}}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (22.1ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 1], ["username", "刘焕超"], ["created_at", "2018-01-02 08:48:58.333505"], ["updated_at", "2018-01-02 08:48:58.333505"]]
+  [1m[35m (382.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 502ms (Views: 0.3ms | ActiveRecord: 412.0ms)
+
+
