@@ -22,10 +22,6 @@ const Login = ({
       if (errors) {
         return
       }
-      // dispatch({ 
-      //     type: 'login/showLoginLoading' 
-      // })
-      // wait for 1.5 seconds on purpose
       dispatch({ 
         type: 'login/login', 
         payload: {

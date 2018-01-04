@@ -1794,3 +1794,72 @@ Processing by Api::Admin::SessionsController#create as JSON
 Completed 200 OK in 502ms (Views: 0.3ms | ActiveRecord: 412.0ms)
 
 
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-04 16:44:39 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515055479339, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515055479339}}
+  [1m[36mAdmin::User Load (1.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-04 16:46:54 +0800
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.4ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 1], ["username", "Link"], ["created_at", "2018-01-04 08:47:51.345197"], ["updated_at", "2018-01-04 08:47:51.345197"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 191085ms (Views: 0.7ms | ActiveRecord: 36.2ms)
+
+
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515055614060, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515055614060}}
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-04 16:48:54 +0800
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 1], ["username", "Link"], ["created_at", "2018-01-04 08:49:27.412907"], ["updated_at", "2018-01-04 08:49:27.412907"]]
+  [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 86003ms (Views: 0.3ms | ActiveRecord: 15.9ms)
+
+
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515055614060, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515055614060}}
+  [1m[36mAdmin::User Load (3.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.7ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 1], ["username", "Link"], ["created_at", "2018-01-04 08:50:11.842434"], ["updated_at", "2018-01-04 08:50:11.842434"]]
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 44361ms (Views: 0.3ms | ActiveRecord: 23.9ms)
+
+
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-04 16:53:03 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515055983375, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515055983375}}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 1], ["username", "Link"], ["created_at", "2018-01-04 08:53:03.999347"], ["updated_at", "2018-01-04 08:53:03.999347"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 141ms (Views: 0.9ms | ActiveRecord: 21.0ms)
+
+
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-04 16:54:38 +0800
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515056078135, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515056078135}}
+  [1m[36mAdmin::User Load (1.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 1], ["username", "Link"], ["created_at", "2018-01-04 08:54:48.441414"], ["updated_at", "2018-01-04 08:54:48.441414"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 123ms (Views: 0.3ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-04 16:55:37 +0800
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"admin", "password"=>"[FILTERED]"}, "t"=>1515056137346, "session"=>{"user"=>{"account"=>"admin", "password"=>"[FILTERED]"}, "t"=>1515056137346}}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "admin"], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-04 16:55:52 +0800
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515056152912, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515056152912}}
+  [1m[36mAdmin::User Load (5.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 1], ["username", "Link"], ["created_at", "2018-01-04 08:55:53.061790"], ["updated_at", "2018-01-04 08:55:53.061790"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 139ms (Views: 0.4ms | ActiveRecord: 28.8ms)
+
+

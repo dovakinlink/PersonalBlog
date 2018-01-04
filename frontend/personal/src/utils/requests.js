@@ -81,13 +81,17 @@ export default function request(options){
     const { statusText, status } = response;
     let data = response.data;
     let meesage_str = buildMessages(data);
+    debugger
     return {
-      success: true,
-      code: 0,
-      status,
-      message: message_str ? meesage_str : statusText,
-      type: data.success ? 'success' : 'error',
-      ...data,
+      code: data.code,
+      message: data.message,
+      success: data.success,
+      data: data.data,
+      // code: 0,
+      // status,
+      // message: message_str ? meesage_str : statusText,
+      // type: data.success ? 'success' : 'error',
+      // ...data,
     }
   }).catch((error) => {
     let {message} = error.response.data

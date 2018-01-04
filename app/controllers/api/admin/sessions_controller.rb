@@ -10,7 +10,7 @@ class Api::Admin::SessionsController < Api::BaseController
         if SessionCreateService.call(@user,{})
             # 记录登录日志
             ::Admin::UserLog.create({:user_id => @user.id, :username => @user.username, :ip => request.remote_ip})
-            api_render({:message => '登录成功', :states => 200, :sucess => true, :user => user_json})
+            api_render({:message => '登录成功', :states => 200, :success => true, :data => {:user => user_json}})
         end
     end
 
