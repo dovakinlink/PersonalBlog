@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import { PropTypes } from 'react'
 import { connect } from 'dva'
 import FigureCard from './figurecard'
 import ImageCard from './imagecard'
