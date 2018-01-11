@@ -81,7 +81,6 @@ export default function request(options){
     const { statusText, status } = response;
     let data = response.data;
     let meesage_str = buildMessages(data);
-    debugger
     return {
       code: data.code,
       message: data.message,

@@ -15,5 +15,9 @@ module Admin
         def self.current_ip
             Thread.current[:ip]
         end
+
+        def self.current_user=(user)
+            Thread.current[:user]=user
+        end
     end
 end

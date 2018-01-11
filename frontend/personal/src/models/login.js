@@ -20,13 +20,12 @@ export default {
     }, {call, put }) {
       const data = yield call(login,payload);
       yield put({ type: 'hideLoginLoading' })
-      debugger
       if(data.success){
         let user = data.data.user
         Cookie.set('user_session', user.authentication_token);
         Cookie.set('user_account', user.account);
         Cookie.set('user_id', user.id);
-        yield put(routerRedux.push('/dashboard'))
+        yield put(routerRedux.push('/home'))
       } else {
         message.error(data.message + "!  暂不支持注册，如需账号许可请联系站长")
         return;

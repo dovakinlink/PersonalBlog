@@ -6,5 +6,9 @@ Rails.application.routes.draw do
       resources :users
       resources :sessions
     end
+
+    namespace :article do
+      resources :articles
+    end
   end
 end

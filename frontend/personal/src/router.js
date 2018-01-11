@@ -22,6 +22,24 @@ const Routers = function ({ history, app }) {
       },
       childRoutes: [
         {
+          path: 'home',
+          getComponent (nextState, cb) {
+            require.ensure([], (require) => {
+              registerModel(app, require('./models/home'))
+              cb(null, require('./routes/home/'))
+            }, 'home')
+          }
+        },
+        {
+          path: 'article',
+          getComponent (nextState, cb) {
+            require.ensure([], (require) => {
+              registerModel(app, require('./models/article'))
+              cb(null, require('./routes/article/'))
+            }, 'article')
+          }
+        },
+        {
           path: 'dashboard',
           getComponent (nextState, cb) {
             require.ensure([], (require) => {
@@ -77,8 +95,9 @@ const Routers = function ({ history, app }) {
           path: 'editor',
           getComponent (nextState, cb) {
             require.ensure([], (require) => {
+              registerModel(app, require('./models/editor'))
               cb(null, require('./routes/editor/'))
-            }, 'quillEditor')
+            }, 'editor')
           }
         },
         {

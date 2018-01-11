@@ -83,7 +83,7 @@ class Header extends React.Component {
               <li>
                 <a>
                   <Popover overlayStyle={popoverStyle} content={msgContent} placement='bottomRight' title='3 unread message'>
-                    <Badge count={3}>
+                    <Badge>
                       <Avatar size='small' icon='notification' style={avatarStyle} />
                     </Badge>
                   </Popover>
