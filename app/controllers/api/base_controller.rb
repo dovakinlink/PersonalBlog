@@ -11,7 +11,6 @@ class Api::BaseController < ApplicationController
     attr_accessor :current_user
 
     def authenticate_user!
-      binding.pry
       token, options = ActionController::HttpAuthentication::Token.token_and_options(request)
       token ||= request.authorization
       user = token && ::Admin::User.find_by(authentication_token: token)
@@ -24,7 +23,6 @@ class Api::BaseController < ApplicationController
     end
 
     def user_sign_in?
-      binding.pry
       /[^session]/ =~ controller_name
     end
 end

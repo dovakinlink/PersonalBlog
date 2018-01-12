@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180108091201) do
+ActiveRecord::Schema.define(version: 20180112081616) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20180108091201) do
     t.datetime "created_at",                        null: false
     t.datetime "updated_at",                        null: false
     t.string   "authentication_token"
+    t.string   "avatar"
   end
 
   create_table "article_contents", force: :cascade do |t|
@@ -56,19 +57,6 @@ ActiveRecord::Schema.define(version: 20180108091201) do
   end
 
   create_table "article_mains", force: :cascade do |t|
-    t.string   "no",                      comment: "文章编号"
-    t.string   "title",                   comment: "文章标题"
-    t.string   "author",                  comment: "作者名称"
-    t.string   "author_id",               comment: "作者用户id"
-    t.integer  "content_id",              comment: "文章正文关联id"
-    t.integer  "comment_id",              comment: "评论关联id"
-    t.integer  "good",                    comment: "赞"
-    t.integer  "bad",                     comment: "踩"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "articles", force: :cascade do |t|
     t.string   "no",                      comment: "文章编号"
     t.string   "title",                   comment: "文章标题"
     t.string   "author",                  comment: "作者名称"

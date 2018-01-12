@@ -1,4 +1,4 @@
-class Api::Article::ArticlesController < ::Api::ApplicationController
+class Api::Article::ArticlesController < Api::BaseController
 
     def create
         begin

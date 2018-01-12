@@ -35,6 +35,8 @@ gem 'redis-objects'
 gem 'redis-session-store'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+# File upload
+gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

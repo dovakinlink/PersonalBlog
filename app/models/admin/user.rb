@@ -2,6 +2,9 @@ require 'bcrypt'
 
 class Admin::User < ApplicationRecord
     include BCrypt
+
+    mount_uploaders :avatar, FileUploader
+
     has_many :admin_user_role_relations, :class_name => 'Admin::UserRoleRelation', foreign_key: "user_id"
     before_create :generate_authentication_token
     
