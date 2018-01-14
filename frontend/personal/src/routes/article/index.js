@@ -1,7 +1,7 @@
 import { PropTypes } from 'react'
 import { connect } from 'dva'
 import { routerRedux } from 'dva/router'
-import {Card, Table, Form, Input, Button, Row} from 'antd'
+import {Card, Table, Form, Input, Button, Row,Col} from 'antd'
 import {SearchForm} from '../../components'
 
 const FormItem = Form.Item;
@@ -104,14 +104,20 @@ class Article extends React.Component {
                             }}>新增</Button>
                         </Row>
                     </Form> */}
-                    <SearchForm {...searchFormProps} />
-                    <Button 
-                        ghost={true}
-                        type="primary" icon="plus"
-                        onClick={() => {
-                            this.props.dispatch(routerRedux.push('/editor'))
-                        }}>
-                    </Button>
+                    <Row>
+                        <Col>
+                            <SearchForm {...searchFormProps} />
+                        </Col>
+                        <Col>
+                            <Button 
+                                ghost={true}
+                                type="primary" icon="plus"
+                                onClick={() => {
+                                    this.props.dispatch(routerRedux.push('/editor'))
+                                }}>
+                            </Button>
+                        </Col>
+                    </Row>
                 </Card>
                 <Card>
                     <Table 

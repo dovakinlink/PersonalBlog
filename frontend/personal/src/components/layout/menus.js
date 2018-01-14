@@ -27,7 +27,7 @@ class Menus extends React.Component {
       <Menu mode={sidebarFold ? 'vertical' : 'inline'} theme='light' onClick={onMenuClick} selectedKeys={Array.of(menukey)}>
         <Menu.Item key='home'>
           <Link to='/home'>
-            <Icon type='appstore-o' />控制台
+            <Icon type='appstore-o' /><span>控制台</span>
           </Link>
         </Menu.Item>
         <SubMenu key='manage' title={<span><Icon type='bars'/><span>模块</span></span>}>

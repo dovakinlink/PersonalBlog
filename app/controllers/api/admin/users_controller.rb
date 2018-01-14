@@ -1,4 +1,4 @@
-class Api::Admin::UsersController < ::Api::ApplicationController
+class Api::Admin::UsersController < ::Api::BaseController
     
     before_action :set_user, only: [:create]
 
@@ -12,6 +12,7 @@ class Api::Admin::UsersController < ::Api::ApplicationController
             user = ::Admin::User.new(user_params)
             # 存储密文密码
             user.password = params[:user][:password]
+            user.avatar = avatar_params
             user.state = 0
             begin
                 ::Admin::User.transaction do
@@ -31,6 +32,17 @@ class Api::Admin::UsersController < ::Api::ApplicationController
 
     def user_params
         params.require(:user).permit(::Admin::User.attribute_names, :password)    
+    end
+
+    def avatar_params
+        flies = []
+        if params[:files].present?
+            params[:files].each do |iten|
+                file = item.permit(:name,:size,:type,:uid,:url)
+                files.push(file)
+            end
+        end
+        return files
     end
 
     def set_user
