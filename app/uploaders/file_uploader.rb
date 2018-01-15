@@ -11,15 +11,19 @@ class FileUploader < CarrierWave::Uploader::Base
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
-    "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+    "uploads/avatar/"
   end
 
-  # 根据文件内容进行MD5加密，用于文件命名
+  # # 根据文件内容进行MD5加密，用于文件命名
+  # def filename
+  #   if original_filename
+  #     @name ||= Digest::MD5.hexdigest(File.open(current_path, "rb")){ |f| "#{f.read}"}
+  #     "#{@name}.#{file.extension}"
+  #   end
+  # end
+
   def filename
-    if original_filename
-      @name ||= Digest::MD5.hexdigest(File.open(current_path, "rb")){ |f| "#{f.read}"}
-      "#{@name}.#{file.extension}"
-    end
+    original_filename
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:

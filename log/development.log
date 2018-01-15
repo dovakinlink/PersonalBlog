@@ -2050,3 +2050,514 @@ Migrating to AddAvatarToUser (20180112081616)
   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7501268506759722030)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 15:55:21 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/liuhuanchao/DvaProjects/PersonalBlog/app/controllers/api/admin/users_controller.rb:10: syntax error, unexpected '=', expecting =>
+> '用户名已存在',:code = 1}) && return if existUser.pr
+                              ^):
+  
+app/controllers/api/admin/users_controller.rb:10: syntax error, unexpected '=', expecting =>
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.6ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.6ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (133.3ms)
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 15:59:23 +0800
+  
+SyntaxError (/Users/liuhuanchao/DvaProjects/PersonalBlog/app/controllers/api/admin/users_controller.rb:10: syntax error, unexpected '=', expecting =>
+> '用户名已存在',:code = 1}) && return if existUser.pr
+                              ^):
+  
+app/controllers/api/admin/users_controller.rb:10: syntax error, unexpected '=', expecting =>
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.8ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.5ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (231.2ms)
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:01:05 +0800
+  
+SyntaxError (/Users/liuhuanchao/DvaProjects/PersonalBlog/app/controllers/api/admin/users_controller.rb:10: syntax error, unexpected '=', expecting =>
+> '用户名已存在',:code = 1}) && return if existUser.pr
+                              ^):
+  
+app/controllers/api/admin/users_controller.rb:10: syntax error, unexpected '=', expecting =>
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.9ms)
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:02:29 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (9.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"data"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515916949239, "user"=>{"data"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515916949239}}
+  [1m[36mAdmin::User Load (11.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+No template found for Api::Admin::UsersController#create, rendering head :no_content
+Completed 204 No Content in 643ms (ActiveRecord: 33.5ms)
+
+
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:03:33 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"data"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515917013846, "user"=>{"data"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515917013846}}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+No template found for Api::Admin::UsersController#create, rendering head :no_content
+Completed 204 No Content in 419ms (ActiveRecord: 0.7ms)
+
+
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:04:11 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"data"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515917051242, "user"=>{"data"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515917051242}}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+No template found for Api::Admin::UsersController#create, rendering head :no_content
+Completed 204 No Content in 565ms (ActiveRecord: 0.5ms)
+
+
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:04:21 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"data"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515917061392, "user"=>{"data"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515917061392}}
+  [1m[36mAdmin::User Load (18.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+No template found for Api::Admin::UsersController#create, rendering head :no_content
+Completed 204 No Content in 460ms (ActiveRecord: 18.7ms)
+
+
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:04:52 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"data"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515917092131, "user"=>{"data"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515917092131}}
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+No template found for Api::Admin::UsersController#create, rendering head :no_content
+Completed 204 No Content in 493ms (ActiveRecord: 3.1ms)
+
+
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:05:53 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515917153771}
+  [1m[36mAdmin::User Load (1.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "11111111111"], ["LIMIT", 1]]
+Unpermitted parameter: confirm
+Unpermitted parameter: confirm
+Unpermitted parameter: confirm
+Unpermitted parameter: confirm
+Completed 500 Internal Server Error in 67958ms (ActiveRecord: 28.7ms)
+
+
+  
+NameError (undefined local variable or method `files' for #<Api::Admin::UsersController:0x007ffbdccb3678>
+Did you mean?  flies):
+  
+app/controllers/api/admin/users_controller.rb:46:in `avatar_params'
+app/controllers/api/admin/users_controller.rb:16:in `create'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (203.9ms)
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:09:31 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515917371570}
+  [1m[36mAdmin::User Load (0.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (0.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "11111111111"], ["LIMIT", 1]]
+Unpermitted parameter: confirm
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAdmin::User Load (2.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "NGLPqULFWl2Yj8ztNSFQptPLUEsuyY6aPhUyEzYT4o8Bd79Jb/ZuTxVVAePSbqj1i55PkWnSY/eacasu2jrJrg=="], ["LIMIT", 1]]
+  [1m[35mSQL (24.8ms)[0m  [1m[32mINSERT INTO "admin_users" ("username", "account", "password_hash", "state", "created_at", "updated_at", "authentication_token") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "niubi"], ["account", "11111111111"], ["password_hash", "$2a$10$JJ5QDXYP0ylT3LLEq0CKt.opQFRaN/3.JLhS9Aq6CK5VhhzHnp146"], ["state", 0], ["created_at", "2018-01-14 08:09:58.640385"], ["updated_at", "2018-01-14 08:09:58.640385"], ["authentication_token", "NGLPqULFWl2Yj8ztNSFQptPLUEsuyY6aPhUyEzYT4o8Bd79Jb/ZuTxVVAePSbqj1i55PkWnSY/eacasu2jrJrg=="]]
+  [1m[35m (3.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 16965ms (Views: 1.2ms | ActiveRecord: 42.0ms)
+
+
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:13:57 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"niubi", "account"=>"11111111111", "password"=>"[FILTERED]", "confirm"=>"111111"}, "t"=>1515917637594}
+  [1m[36mAdmin::User Load (3.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (1.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "11111111111"], ["LIMIT", 1]]
+Unpermitted parameter: confirm
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "+clDwpPJpq7a7DJbMM/LgQnwgAYhrjdklFLrKTL35pNXu+IPRZGpIX4KFW2BvACVZo2nrdovILo5LJ1CxFkULw=="], ["LIMIT", 1]]
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "admin_users" ("username", "account", "password_hash", "state", "created_at", "updated_at", "authentication_token") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "niubi"], ["account", "11111111111"], ["password_hash", "$2a$10$5mH9pRDtwf1KBjWBHkivTui6wWSYNsEcj5xXz.vSQpN1VRWWHUSvW"], ["state", 0], ["created_at", "2018-01-14 08:14:01.306209"], ["updated_at", "2018-01-14 08:14:01.306209"], ["authentication_token", "+clDwpPJpq7a7DJbMM/LgQnwgAYhrjdklFLrKTL35pNXu+IPRZGpIX4KFW2BvACVZo2nrdovILo5LJ1CxFkULw=="]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 3650ms (Views: 1.1ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:15:43 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Link", "account"=>"18539902046", "password"=>"[FILTERED]", "confirm"=>"123456"}, "t"=>1515917743168}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+Unpermitted parameter: confirm
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:17:08 +0800
+Completed 500 Internal Server Error in 109918ms (ActiveRecord: 11.0ms)
+
+
+  
+NoMethodError (undefined method `get_code_length_year' for Redis:Class):
+  
+app/controllers/api/admin/users_controller.rb:18:in `create'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.1ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (159.7ms)
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Link", "account"=>"18539902046", "password"=>"[FILTERED]", "confirm"=>"123456"}, "t"=>1515917828617}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+Unpermitted parameter: confirm
+Completed 500 Internal Server Error in 16355ms (ActiveRecord: 1.2ms)
+
+
+  
+NoMethodError (undefined method `today' for Data:Class):
+  
+app/services/utils/redis.rb:32:in `get_code_length_year'
+app/controllers/api/admin/users_controller.rb:18:in `create'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (140.0ms)
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:19:09 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Link", "account"=>"18539902046", "password"=>"[FILTERED]", "confirm"=>"123456"}, "t"=>1515917949133}
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+Unpermitted parameter: confirm
+Completed 500 Internal Server Error in 28306ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `today' for Data:Class):
+  
+app/services/utils/redis.rb:33:in `get_code_length_year'
+app/controllers/api/admin/users_controller.rb:18:in `create'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (120.7ms)
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:19:42 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Link", "account"=>"18539902046", "password"=>"[FILTERED]", "confirm"=>"123456"}, "t"=>1515917982011}
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+Unpermitted parameter: confirm
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35mSQL (6.9ms)[0m  [1m[32mINSERT INTO "admin_users" ("code", "username", "account", "password_hash", "state", "created_at", "updated_at", "authentication_token") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["code", "YH2018011400001"], ["username", "Link"], ["account", "18539902046"], ["password_hash", "$2a$10$VYw4NuFZaWjlwnKJisrHBe4UGer3.i8gwmT9u4XoFk1bVyq9mhRfS"], ["state", 0], ["created_at", "2018-01-14 08:20:00.917705"], ["updated_at", "2018-01-14 08:20:00.917705"], ["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 18817ms (Views: 0.5ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:24:06 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Juju", "account"=>"18595521812", "password"=>"[FILTERED]", "confirm"=>"123456"}, "t"=>1515918246781}
+  [1m[36mAdmin::User Load (2.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18595521812"], ["LIMIT", 1]]
+Unpermitted parameter: confirm
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "mTWvl0CnQNPhTDUqh+DbC1aFo6rslgX64UUVDnbBdv6+zPTWPuQ1GkYRB0ZlVzp6zYIFOg1JrG3BdZ+ezIQGHw=="], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "admin_users" ("code", "username", "account", "password_hash", "state", "created_at", "updated_at", "authentication_token") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["code", "YH2018011400002"], ["username", "Juju"], ["account", "18595521812"], ["password_hash", "$2a$10$AURCk3RtID40QjG9JNcroOdolDBSi4IqNdhjgqwRtmcxnHj.MIyci"], ["state", 0], ["created_at", "2018-01-14 08:24:11.326905"], ["updated_at", "2018-01-14 08:24:11.326905"], ["authentication_token", "mTWvl0CnQNPhTDUqh+DbC1aFo6rslgX64UUVDnbBdv6+zPTWPuQ1GkYRB0ZlVzp6zYIFOg1JrG3BdZ+ezIQGHw=="]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4500ms (Views: 0.3ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:24:41 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Juju", "account"=>"18595521812", "password"=>"[FILTERED]", "confirm"=>"123456"}, "t"=>1515918281732}
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (1.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18595521812"], ["LIMIT", 1]]
+Unpermitted parameter: confirm
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "E+WiqTqSFWqhUFAvT4p2NzubhcLCNT7+2urFmLwxHg5+ceFdxLl8OjPepLG1Tk7iSHRVUAVNhO4c/LwMUFakSg=="], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "admin_users" ("code", "username", "account", "password_hash", "state", "created_at", "updated_at", "authentication_token") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["code", "YH2018011400003"], ["username", "Juju"], ["account", "18595521812"], ["password_hash", "$2a$10$O4TWC9gn9CURWGoCz5yjR.ayztrcQx/rCVs6i4n.Hd0g9vJaoYH8W"], ["state", 0], ["created_at", "2018-01-14 08:24:44.366434"], ["updated_at", "2018-01-14 08:24:44.366434"], ["authentication_token", "E+WiqTqSFWqhUFAvT4p2NzubhcLCNT7+2urFmLwxHg5+ceFdxLl8OjPepLG1Tk7iSHRVUAVNhO4c/LwMUFakSg=="]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 2580ms (Views: 0.3ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:25:56 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Juju", "account"=>"18595521812", "password"=>"[FILTERED]", "confirm"=>"123456"}, "t"=>1515918356719}
+  [1m[36mAdmin::User Load (1.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (2.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18595521812"], ["LIMIT", 1]]
+Unpermitted parameter: confirm
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAdmin::User Load (1.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "eDn7jjB1PVmS22aBEsA41k9VEFujayFGhRsUbtqtuHIz59zod6QNTBbXir6rB07VJdxOcVpX9nJgUrImYyF89g=="], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "admin_users" ("code", "username", "account", "password_hash", "state", "created_at", "updated_at", "authentication_token") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["code", "YH2018011400004"], ["username", "Juju"], ["account", "18595521812"], ["password_hash", "$2a$10$azqJd8jZYkFtq6VhaMKnyuQMCeFj.WBw7m14WgjVykULa6VLDeyQi"], ["state", 0], ["created_at", "2018-01-14 08:26:00.282370"], ["updated_at", "2018-01-14 08:26:00.282370"], ["authentication_token", "eDn7jjB1PVmS22aBEsA41k9VEFujayFGhRsUbtqtuHIz59zod6QNTBbXir6rB07VJdxOcVpX9nJgUrImYyF89g=="]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 3531ms (Views: 0.4ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-14 16:34:18 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"SunQ", "account"=>"18637186573", "password"=>"[FILTERED]", "confirm"=>"123456"}, "t"=>1515918858971}
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "null"], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18637186573"], ["LIMIT", 1]]
+Unpermitted parameter: confirm
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "QpR6IkFUpP9MwjwWsoews1fFV71JnpWcMw3lsDULIU7A9qul1mh6gUYIYs6nTDiixeFiGrdkoXebMxp1inr/Iw=="], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "admin_users" ("code", "username", "account", "password_hash", "state", "created_at", "updated_at", "authentication_token") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["code", "YH2018011400005"], ["username", "SunQ"], ["account", "18637186573"], ["password_hash", "$2a$10$8epWr3V3x0vscdZerWKHHu5McSlxeRyOmo2MLXk8b5UgFTTSoUpJO"], ["state", 0], ["created_at", "2018-01-14 08:34:29.591747"], ["updated_at", "2018-01-14 08:34:29.591747"], ["authentication_token", "QpR6IkFUpP9MwjwWsoews1fFV71JnpWcMw3lsDULIU7A9qul1mh6gUYIYs6nTDiixeFiGrdkoXebMxp1inr/Iw=="]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 10596ms (Views: 0.5ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-14 17:08:55 +0800
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515920935895, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1515920935895}}
+  [1m[36mAdmin::User Load (0.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 3], ["username", "Link"], ["created_at", "2018-01-14 09:08:56.276859"], ["updated_at", "2018-01-14 09:08:56.276859"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 113ms (Views: 1.0ms | ActiveRecord: 17.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 15:31:56 +0800
+  
+LoadError (Unable to autoload constant Api::Upload::FileuploadController, expected /Users/liuhuanchao/DvaProjects/PersonalBlog/app/controllers/api/upload/fileupload_controller.rb to define it):
+  
+activesupport (5.0.6) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.0.6) lib/active_support/dependencies.rb:203:in `const_missing'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:270:in `const_get'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:270:in `block in constantize'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:266:in `constantize'
+activesupport (5.0.6) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.0.6) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.0.6) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.6) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.6) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.6) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.6) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.6) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.6) lib/action_dispatch/routing/route_set.rb:727:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.6) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.6) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.6) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.4ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.6ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.4ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (118.3ms)
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 15:43:07 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdd5825d8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-19b67g6.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (18.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 127ms (Views: 1.7ms | ActiveRecord: 90.2ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 15:50:34 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdd3d05c8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-1fgvde6.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 38915ms (Views: 7.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 15:52:15 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdd5517a8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-tv9tl6.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 0.7ms)
+
+
+  
+NameError (undefined local variable or method `e' for #<Api::Upload::FileuploadController:0x007ffbdd5584b8>):
+  
+app/controllers/api/upload/fileupload_controller.rb:8:in `rescue in create'
+app/controllers/api/upload/fileupload_controller.rb:3:in `create'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.7ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (173.9ms)
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 15:52:36 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdc25fde8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-ja7kgw.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 51ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 15:53:32 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbddacbf80 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-tfw6vj.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 74635ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 15:54:53 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfafaba8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-y2j6he.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 232727ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 15:58:52 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdda460b0 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-f7je4c.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 489485ms (Views: 0.9ms | ActiveRecord: 26.9ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 16:16:56 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdd9cfe10 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-ks25qm.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 975029ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 16:33:17 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdc257058 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-1dqmo1u.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+CarrierWave::UnknownStorageError (Unknown storage: avatar):
+  
+app/uploaders/file_uploader.rb:8:in `<class:FileUploader>'
+app/uploaders/file_uploader.rb:1:in `<top (required)>'
+app/models/admin/user.rb:6:in `<class:User>'
+app/models/admin/user.rb:3:in `<top (required)>'
+app/controllers/api/base_controller.rb:16:in `authenticate_user!'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.2ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (133.7ms)
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 16:34:39 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdf979bf8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-18dw630.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (1.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 62042ms (Views: 0.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 16:35:47 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfef97e0 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-ub20vj.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (2.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 35041ms (Views: 0.8ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 16:44:56 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdd5493f0 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-34fepg.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 9771ms (Views: 5.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-15 16:52:44 +0800
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1516006364546, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1516006364546}}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (8.7ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 3], ["username", "Link"], ["created_at", "2018-01-15 08:52:45.044481"], ["updated_at", "2018-01-15 08:52:45.044481"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 136ms (Views: 0.8ms | ActiveRecord: 31.3ms)
+
+
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-15 16:53:49 +0800
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1516006429585, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1516006429585}}
+  [1m[36mAdmin::User Load (1.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 3], ["username", "Link"], ["created_at", "2018-01-15 08:53:49.689111"], ["updated_at", "2018-01-15 08:53:49.689111"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 79ms (Views: 0.3ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 17:10:14 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfee83f0 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-1b2pyjz.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 17:10:48 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfe56400 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-9no6rt.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 17:11:11 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfe25cd8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-1xel3kp.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-15 17:11:37 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfdc4e10 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180115-41685-1s5pasj.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+

@@ -22,14 +22,14 @@ module Utils
         end
 
         def self.get_code(length,prefix)
-            day_string = Data.today.strftime('%y%m%d')
+            day_string = Date.today.strftime('%y%m%d')
             rkey = prefix.to_s.upcase + ":" + day_string
             num = get_step_no(rkey)
             prefix.to_s.upcase + day_string + "%0#{length}d" % num
         end
 
         def self.get_code_length_year(length,prefix)
-            day_string = Data.today.strftime('%Y%m%d')
+            day_string = Date.today.strftime('%Y%m%d')
             rkey = prefix.to_s.upcase + ":" + day_string
             num = get_step_no(rkey)
             prefix.to_s + day_string + "%0#{length}d" % num

@@ -37,6 +37,18 @@ class Menus extends React.Component {
             </Link>
           </Menu.Item>
         </SubMenu>
+        <SubMenu key='user_manager' title={<span><Icon type='bars'/><span>用户</span></span>}>
+          <Menu.Item key='user_new'>
+            <Link to='/user' style={{color: '#999'}}>
+              用户新增
+            </Link>
+          </Menu.Item>
+          <Menu.Item key='user_list'>
+            <Link to='/article' style={{color: '#999'}}>
+              用户管理
+            </Link>
+          </Menu.Item>
+        </SubMenu>
         <Menu.Item key='dashboard'>
           <Link to='/dashboard'>
             <Icon type='appstore-o' />Dashboard

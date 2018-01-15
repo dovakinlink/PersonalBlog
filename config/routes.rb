@@ -10,5 +10,9 @@ Rails.application.routes.draw do
     namespace :article do
       resources :articles
     end
+
+    namespace :upload do
+      resources :fileupload
+    end
   end
 end
