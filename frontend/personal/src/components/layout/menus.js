@@ -49,17 +49,17 @@ class Menus extends React.Component {
             </Link>
           </Menu.Item>
         </SubMenu>
-        <Menu.Item key='dashboard'>
+        {/* <Menu.Item key='dashboard'>
           <Link to='/dashboard'>
             <Icon type='appstore-o' />Dashboard
           </Link>
-        </Menu.Item>
-        <Menu.Item key='profile'>
+        </Menu.Item> */}
+        {/* <Menu.Item key='profile'>
           <Link to='/profile'>
             <Icon type='user' />User Profile
           </Link>
-        </Menu.Item>
-        <SubMenu key='component' title={<span><Icon type='bars' /><span>Component</span></span>}>
+        </Menu.Item> */}
+        {/* <SubMenu key='component' title={<span><Icon type='bars' /><span>Component</span></span>}>
           <Menu.Item key='alert'>
             <Link to='/alert' style={{color: '#999'}}>
               Alert
@@ -90,17 +90,17 @@ class Menus extends React.Component {
               Table
             </Link>
           </Menu.Item>
-        </SubMenu>
+        </SubMenu> */}
         <Menu.Item key='setting'>
           <Link to='/setting'>
-            <Icon type='setting' />Setting
+            <Icon type='setting' />个性化
           </Link>
         </Menu.Item>
-        <Menu.Item key='acknowledge'>
+        {/* <Menu.Item key='acknowledge'>
           <Link to='/acknowledge'>
             <Icon type='copyright' />Acknowledge
           </Link>
-        </Menu.Item>
+        </Menu.Item> */}
       </Menu>
     )
   }

@@ -41,14 +41,14 @@ class Setting extends React.Component {
       <div className={styles.container}>
         <Row>
           <Col span={24}>
-            <h2>SIDEBAR BACKGROUND</h2>
+            <h2>个性化你的背景</h2>
             <Tag color='#d80b0b' className={classnames(styles.tags, { [styles.tagActive]: sidebarBgColor === 'red' || false })} onClick={() => this.handleSettingColor('red')} />
             <Tag color='#000' className={classnames(styles.tags, { [styles.tagActive]: sidebarBgColor === 'black' || false })} onClick={() => this.handleSettingColor('black')} />
             <Tag color='#ff9800' className={classnames(styles.tags, { [styles.tagActive]: sidebarBgColor === 'yellow' || false })} onClick={() => this.handleSettingColor('yellow')} />
             <Tag color='#1e90ff' className={classnames(styles.tags, { [styles.tagActive]: sidebarBgColor === 'blue' || false })} onClick={() => this.handleSettingColor('blue')} />
           </Col>
           <Col span={32}>
-            <h2>SIDEBAR BACKGROUND IMAGE</h2>
+            <h2>DOTA2壁纸</h2>
             <Switch checkedChildren='ON' unCheckedChildren='OFF' size='default' checked={isShowSidebarBgImg} onChange={this.handleSettingImgIsClose} />
             <Row gutter={48}>
               <Col span={6}>

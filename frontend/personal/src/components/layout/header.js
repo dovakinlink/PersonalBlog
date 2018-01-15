@@ -18,14 +18,6 @@ class Header extends React.Component {
       menuResponsVisible,
       onSwitchMenuPopover } = this.props
 
-    const msgContent = (
-      <div>
-        <p><a>Mike responded to your email</a></p>
-        <p><a>You have 5 new tasks</a></p>
-        <p><a>Another</a></p>
-      </div>
-    )
-
     const searchStyle = {
       width: 150,
       background: '0 0',
@@ -72,15 +64,15 @@ class Header extends React.Component {
                 </div>
             }
             <ul className={styles['navbar-right']}>
-              <li>
+              {/* <li>
                 <Input placeholder='Search' style={searchStyle} />
-              </li>
+              </li> */}
               <li>
                 <a onClick={!fullScreen ? () => onFull(document.documentElement) : onExitFull}>
                   <Avatar size='small' icon={fullScreen ? 'shrink' : 'arrows-alt'} style={avatarStyle} />
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a>
                   <Popover overlayStyle={popoverStyle} content={msgContent} placement='bottomRight' title='3 unread message'>
                     <Badge>
@@ -88,10 +80,10 @@ class Header extends React.Component {
                     </Badge>
                   </Popover>
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a>
-                  <Popover overlayStyle={popoverStyle} content={<div><a onClick={onLogout}>Sign out</a></div>} placement='bottomRight' trigger='click'>
+                  <Popover overlayStyle={popoverStyle} content={<div><a onClick={onLogout}>注销</a></div>} placement='bottomRight' trigger='click'>
                     <Avatar size='small' icon='user' style={avatarStyle} />
                   </Popover>
                 </a>
