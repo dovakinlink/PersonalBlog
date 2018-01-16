@@ -2591,3 +2591,419 @@ Processing by Api::Admin::SessionsController#create as JSON
 Completed 200 OK in 116ms (Views: 0.6ms | ActiveRecord: 9.8ms)
 
 
+Started OPTIONS "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 10:31:33 +0800
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/upload/fileupload"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered collection of /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (38.9ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (54.9ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.8ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (280.6ms)
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 10:32:03 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfe3cf00 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-ghle2.jpeg>, @original_filename="WechatIMG62.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"WechatIMG62.jpeg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (24.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 56ms (Views: 0.9ms | ActiveRecord: 24.9ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 10:32:38 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdda3f698 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-ifdvoq.xlsx>, @original_filename="个人负债还款明细（2016年8－2017年8月）.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"\xE4\xB8\xAA\xE4\xBA\xBA\xE8\xB4\x9F\xE5\x80\xBA\xE8\xBF\x98\xE6\xAC\xBE\xE6\x98\x8E\xE7\xBB\x86\xEF\xBC\x882016\xE5\xB9\xB48\xEF\xBC\x8D2017\xE5\xB9\xB48\xE6\x9C\x88\xEF\xBC\x89.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}
+  [1m[36mAdmin::User Load (8.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 8.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 10:32:59 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfd8cd08 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-3e9qp6.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 29ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 10:35:44 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfd3dde8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-f77736.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 10:36:19 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdd4f0778 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-ihpxdf.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 10:39:37 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdd4d20c0 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-x4fgim.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (1.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 22ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 10:45:13 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfcb9278 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-1xx7ms6.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (14.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 14.4ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 10:51:05 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfb98d08 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-125jsga.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (1.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 68ms (Views: 3.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 10:52:36 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfae2d28 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-1y2ns4.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (11.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 48ms (Views: 1.0ms | ActiveRecord: 11.5ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 10:53:03 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfa335f8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-b5rw0.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 10:54:24 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdf961080 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-wqrkpj.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/uploads/avatar/undefined" for 127.0.0.1 at 2018-01-16 11:12:49 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/avatar/undefined"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered collection of /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (18.6ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (190.7ms)
+Started GET "/uploads/avatar/undefined" for 127.0.0.1 at 2018-01-16 11:17:19 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/avatar/undefined"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered collection of /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (167.6ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.6ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (692.8ms)
+Started GET "/uploads/avatar/undefined" for 127.0.0.1 at 2018-01-16 11:18:03 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/avatar/undefined"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered collection of /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (73.7ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (385.1ms)
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 11:18:09 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdc38fc40 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-1f77t79.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (22.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 1.9ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/uploads/avatar/undefined" for 127.0.0.1 at 2018-01-16 11:19:01 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/avatar/undefined"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered collection of /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (16.2ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (328.9ms)
+Started GET "/uploads/avatar/http://localhost:3000/uploads/avatar/UNADJUSTEDNONRAW_thumb_1.jpg" for 127.0.0.1 at 2018-01-16 11:19:17 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/avatar/http:/localhost:3000/uploads/avatar/UNADJUSTEDNONRAW_thumb_1.jpg"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered collection of /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (10.7ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (238.6ms)
+Started GET "/uploads/avatar/http://localhost:3000/uploads/avatar/UNADJUSTEDNONRAW_thumb_1.jpg" for 127.0.0.1 at 2018-01-16 11:19:40 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/avatar/http:/localhost:3000/uploads/avatar/UNADJUSTEDNONRAW_thumb_1.jpg"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (16.7ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (241.7ms)
+Started GET "/uploads/avatar/http://localhost:3000/uploads/avatar/UNADJUSTEDNONRAW_thumb_1.jpg" for 127.0.0.1 at 2018-01-16 11:20:34 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/avatar/http:/localhost:3000/uploads/avatar/UNADJUSTEDNONRAW_thumb_1.jpg"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered collection of /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (17.3ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (369.3ms)
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 11:21:31 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfb20dd0 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-9u528z.jpeg>, @original_filename="WechatIMG62.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"WechatIMG62.jpeg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 11:22:18 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdfa49fd8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-u1o3xr.jpeg>, @original_filename="WechatIMG62.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"WechatIMG62.jpeg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 11:23:16 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdd3da780 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-1p78i89.jpeg>, @original_filename="WechatIMG62.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"WechatIMG62.jpeg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 11:23:21 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdf893e50 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-1g9w3y3.jpg>, @original_filename="sidebar-2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"sidebar-2.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+

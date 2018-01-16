@@ -113,7 +113,7 @@ const BaseForm = ({
                         {getFieldDecorator('username', {
                             rules: [
                             {
-                                required: true, message: 'Please input your E-mail!',
+                                required: true, message: '请输入用户名!',
                             },{
                                 validator: handleNotNull,
                             }],
@@ -129,7 +129,7 @@ const BaseForm = ({
                         {getFieldDecorator('account', {
                             rules: [
                             {
-                                required: true, message: 'Please input your E-mail!',
+                                required: true, message: '请输入手机号！',
                             },{
                                 validator: handleNotNull,
                             }],
@@ -144,7 +144,7 @@ const BaseForm = ({
                     >
                     {getFieldDecorator('password', {
                         rules: [{
-                        required: true, message: 'Please input your password!',
+                        required: true, message: '请输入密码!',
                         }, {
                         validator: checkConfirm,
                         }],
@@ -159,7 +159,7 @@ const BaseForm = ({
                     >
                     {getFieldDecorator('confirm', {
                         rules: [{
-                        required: true, message: 'Please confirm your password!',
+                        required: true, message: '请再次输入密码!',
                         }, {
                         validator: checkPassword,
                         }],

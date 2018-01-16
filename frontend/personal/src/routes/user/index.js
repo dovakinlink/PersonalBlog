@@ -1,4 +1,5 @@
 import { PropTypes } from 'react'
+import React from 'react'
 import { connect } from 'dva'
 import { routerRedux } from 'dva/router'
 import { Card, Row, Col, Icon, Upload, message} from 'antd'
@@ -11,7 +12,8 @@ const Dragger = Upload.Dragger
 class User extends React.Component {
 
     render() {
-        const {confirmDirty, isState } = this.props;
+        const {user,dispatch } = this.props;
+        const {confirmDirty, isState, avatar} = user;
         const baseFormProps = {
             confirmDirty,
             isState,
@@ -25,11 +27,17 @@ class User extends React.Component {
                 'Authorization': 'Bearer ' + getCookie('user_session'),
             },
             onChange(info){
-                debugger
                 if(info.file.status === 'done' ){
                     message.success(`${info.file.name}上传成功`);
+                    dispatch({
+                        type:'user/update',
+                        payload:{
+                            avatar: info.file.name
+                        }
+                    })
+                    // this.setState({avatar: "http://localhost:3000/uploads/avatar/" + info.file.name})
                 }
-            },
+            }
         }
         return(
             <div>
@@ -50,7 +58,7 @@ class User extends React.Component {
                             bordered={false}
                             noHovering
                             title={<div className={styles['card-avatar']}>
-                                <a><img className={styles.img} src='http://localhost:3000/uploads/avatar/UNADJUSTEDNONRAW_thumb_1.jpg' /></a>
+                                <a><img className={styles.img} src={`http://localhost:3000/uploads/avatar/${avatar}`} /></a>
                             </div>}>
                             <div style={{ marginTop: 50 }}>
                                 <Dragger {...uploadProps} >
