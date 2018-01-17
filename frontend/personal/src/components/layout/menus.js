@@ -27,17 +27,17 @@ class Menus extends React.Component {
       <Menu mode={sidebarFold ? 'vertical' : 'inline'} theme='light' onClick={onMenuClick} selectedKeys={Array.of(menukey)}>
         <Menu.Item key='home'>
           <Link to='/home'>
-            <Icon type='appstore-o' /><span>控制台</span>
+            <Icon type='appstore-o' />控制台
           </Link>
         </Menu.Item>
-        <SubMenu key='manage' title={<span><Icon type='bars'/><span>模块</span></span>}>
+        <SubMenu key='manage' title={<span><Icon type='bars'/>模块</span>}>
           <Menu.Item key='article'>
             <Link to='/article' style={{color: '#999'}}>
               文章
             </Link>
           </Menu.Item>
         </SubMenu>
-        <SubMenu key='user_manager' title={<span><Icon type='bars'/><span>用户</span></span>}>
+        <SubMenu key='user_manager' title={<span><Icon type='bars'/>用户</span>}>
           <Menu.Item key='user_new'>
             <Link to='/user' style={{color: '#999'}}>
               用户新增
@@ -49,58 +49,11 @@ class Menus extends React.Component {
             </Link>
           </Menu.Item>
         </SubMenu>
-        {/* <Menu.Item key='dashboard'>
-          <Link to='/dashboard'>
-            <Icon type='appstore-o' />Dashboard
-          </Link>
-        </Menu.Item> */}
-        {/* <Menu.Item key='profile'>
-          <Link to='/profile'>
-            <Icon type='user' />User Profile
-          </Link>
-        </Menu.Item> */}
-        {/* <SubMenu key='component' title={<span><Icon type='bars' /><span>Component</span></span>}>
-          <Menu.Item key='alert'>
-            <Link to='/alert' style={{color: '#999'}}>
-              Alert
-            </Link>
-          </Menu.Item>
-          <Menu.Item key='charts'>
-            <Link to='/charts' style={{color: '#999'}}>
-              Charts
-            </Link>
-          </Menu.Item>
-          <Menu.Item key='editor'>
-            <Link to='/editor' style={{color: '#999'}}>
-              Editor
-            </Link>
-          </Menu.Item>
-          <Menu.Item key='grid'>
-            <Link to='/grid' style={{color: '#999'}}>
-              Grid
-            </Link>
-          </Menu.Item>
-          <Menu.Item key='map'>
-            <Link to='/map' style={{color: '#999'}}>
-              Map
-            </Link>
-          </Menu.Item>
-          <Menu.Item key='table'>
-            <Link to='/table' style={{color: '#999'}}>
-              Table
-            </Link>
-          </Menu.Item>
-        </SubMenu> */}
         <Menu.Item key='setting'>
           <Link to='/setting'>
             <Icon type='setting' />个性化
           </Link>
         </Menu.Item>
-        {/* <Menu.Item key='acknowledge'>
-          <Link to='/acknowledge'>
-            <Icon type='copyright' />Acknowledge
-          </Link>
-        </Menu.Item> */}
       </Menu>
     )
   }

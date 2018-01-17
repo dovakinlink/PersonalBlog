@@ -3007,3 +3007,30 @@ Processing by Api::Upload::FileuploadController#create as */*
 Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.3ms)
 
 
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-16 11:25:35 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdcf70dc0 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180116-41685-1bekhxv.jpg>, @original_filename="sidebar-4.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"sidebar-4.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-17 17:09:21 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdc3d3698 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180117-41685-1mdgpb9.jpeg>, @original_filename="dota_sidebar1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"dota_sidebar1.jpeg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (19.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 126ms (Views: 0.7ms | ActiveRecord: 82.2ms)
+
+
+Started POST "/api/admin/users" for 127.0.0.1 at 2018-01-17 17:09:42 +0800
+Processing by Api::Admin::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"bingnv", "account"=>"18511111111", "password"=>"[FILTERED]", "confirm"=>"111111", "state"=>1}, "avatar"=>"dota_sidebar1.jpeg", "t"=>1516180181997}
+  [1m[36mAdmin::User Load (7.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18511111111"], ["LIMIT", 1]]
+Unpermitted parameter: confirm
+  [1m[35m (18.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "nbE2fjkgYMvD29zHM7Bw7KBAZmoFe1vI8h6/TikSrSYoF1xIO+IN0AXaFLyuEREfEoH9f8PQlJ9vF2bGYct6Qg=="], ["LIMIT", 1]]
+  [1m[35mSQL (36.1ms)[0m  [1m[32mINSERT INTO "admin_users" ("code", "username", "account", "password_hash", "state", "created_at", "updated_at", "authentication_token", "avatar") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["code", "YH2018011700001"], ["username", "bingnv"], ["account", "18511111111"], ["password_hash", "$2a$10$0kFGWKY4Y8jHa3kdg6UnuuXVteW3nkllaRVAKJWrBcNnbKjiguzSe"], ["state", 0], ["created_at", "2018-01-17 09:10:09.512546"], ["updated_at", "2018-01-17 09:10:09.512546"], ["authentication_token", "nbE2fjkgYMvD29zHM7Bw7KBAZmoFe1vI8h6/TikSrSYoF1xIO+IN0AXaFLyuEREfEoH9f8PQlJ9vF2bGYct6Qg=="], ["avatar", "http://localhost:3000/uploads/avatar/dota_sidebar1.jpeg"]]
+  [1m[35m (33.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 27492ms (Views: 0.6ms | ActiveRecord: 96.5ms)
+
+

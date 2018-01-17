@@ -9,6 +9,7 @@ const BaseForm = ({
     isState,
     dispatch,
     form,
+    avatar,
 }) => {
     const {
         getFieldValue,
@@ -53,6 +54,7 @@ const BaseForm = ({
                 type: 'user/regist',
                 payload: {
                     user: formData,
+                    avatar: avatar,
                 }
             })
           }

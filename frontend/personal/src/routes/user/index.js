@@ -18,6 +18,7 @@ class User extends React.Component {
             confirmDirty,
             isState,
             dispatch: this.props.dispatch,
+            avatar,
         }
         const uploadProps = {
             name: 'avatar',
@@ -35,7 +36,6 @@ class User extends React.Component {
                             avatar: info.file.name
                         }
                     })
-                    // this.setState({avatar: "http://localhost:3000/uploads/avatar/" + info.file.name})
                 }
             }
         }
