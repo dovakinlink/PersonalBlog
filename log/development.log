@@ -3034,3 +3034,20 @@ Unpermitted parameter: confirm
 Completed 200 OK in 27492ms (Views: 0.6ms | ActiveRecord: 96.5ms)
 
 
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-19 21:30:08 +0800
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1516368608226, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1516368608226}}
+  [1m[36mAdmin::User Load (12.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (30.6ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 3], ["username", "Link"], ["created_at", "2018-01-19 13:30:08.846323"], ["updated_at", "2018-01-19 13:30:08.846323"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 260ms (Views: 1.4ms | ActiveRecord: 141.7ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-19 21:30:40 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffbdd581e08 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180119-41685-mwrp3u.jpg>, @original_filename="UNADJUSTEDNONRAW_thumb_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"UNADJUSTEDNONRAW_thumb_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 25ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+
+

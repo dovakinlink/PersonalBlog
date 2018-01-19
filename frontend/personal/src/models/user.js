@@ -6,7 +6,7 @@ export default {
     state: {
         confirmDirty: false,
         isState: 1,
-        avatar:"UNADJUSTEDNONRAW_thumb_1.jpg",
+        avatar:"",
     },
     subscriptions: {
       setup ({ dispatch, history }) {

@@ -4,10 +4,11 @@ import { connect } from 'dva'
 import { routerRedux } from 'dva/router'
 import { Card, Row, Col, Icon, Upload, message} from 'antd'
 import  BaseForm from './components/BaseForm'
-import styles from '../userprofile/profile.less'
+// import styles from '../userprofile/profile.less'
+import styles from './user.less'
 import classnames from 'classnames'
 import {getCookie,delCookie} from '../../utils/helper'
-const imgAvatar = require('../../assets/img/marc.jpg')
+const defaultAvatar = require('../../assets/img/default_avatar.png')
 const Dragger = Upload.Dragger
 class User extends React.Component {
 
@@ -58,7 +59,7 @@ class User extends React.Component {
                             bordered={false}
                             noHovering
                             title={<div className={styles['card-avatar']}>
-                                <a><img className={styles.img} src={`http://localhost:3000/uploads/avatar/${avatar}`} /></a>
+                                <a><img className={styles.img} src={avatar? `http://localhost:3000/uploads/avatar/${avatar}` : defaultAvatar} /></a>
                             </div>}>
                             <div style={{ marginTop: 50 }}>
                                 <Dragger {...uploadProps} >
