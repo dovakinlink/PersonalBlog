@@ -17,6 +17,20 @@ class Api::Admin::UsersController < ::Api::BaseController
         
     end
 
+    def destroy
+        begin
+            @user = ::Admin::User.find(params[:id])
+            if @user
+                ::Admin::User.transaction do 
+                    @user.destroy!
+                end
+                api_success({message: '删除成功', status: 200, success: true })
+            end
+        rescue => exception
+            api_error({message: e.message,status: 200,success: false})
+        end
+    end
+
     def create
         account = params[:user][:account]
         if account.present?

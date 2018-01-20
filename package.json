@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "braft-editor": "^1.1.10"
+  }
+}

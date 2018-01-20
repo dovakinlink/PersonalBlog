@@ -2,65 +2,87 @@ import { PropTypes } from 'react'
 import React from 'react'
 import { connect } from 'dva'
 import { routerRedux } from 'dva/router'
-import {Card, Table, Form, Input, Button, Row,Col, Badge} from 'antd'
+import {Card, Table, Form, Input, Button, Row,Col, Badge, Popconfirm} from 'antd'
 import {SearchForm} from '../../components'
 
 const FormItem = Form.Item;
-const columns = [
-    {
-        title: '用户编号',
-        dataIndex: 'code',
-        key: 'code',
-    },
-    {
-        title: '用户名',
-        dataIndex: 'username',
-        key: 'username',
-        render: (text) => {
-            return <a href="#">{text}</a>
-        }
-    },
-    {
-        title: '账号',
-        dataIndex: 'account',
-        key: 'account',
-    },
-    {
-        title: '状态',
-        dataIndex: 'state',
-        key: 'state',
-        render: (text) => {
-            if(text == 0){
-                return <span>
-                    <Badge status="success" text="启用" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </span>
-            } else {
-                return <span>
-                    <Badge status="error" text="停用" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </span>
-            }
-        }
-    },
-    {
-        title: '创建时间',
-        dataIndex: 'created_at',
-        key: 'created_at',
-    },
-    {
-        title: '操作',
-        key: 'action',
-        render: (text, record) => {
-            return <span>
-                <a href="#">删除</a>
-            </span>
-        }
-    }
-]
 
 class Usermanager extends React.Component {
     render() {
         const { usermanager, dispatch } = this.props
         const {data, pagination, condition} = usermanager;
+
+        const columns = [
+            {
+                title: '用户编号',
+                dataIndex: 'code',
+                key: 'code',
+            },
+            {
+                title: '用户名',
+                dataIndex: 'username',
+                key: 'username',
+                render: (text) => {
+                    return <a href="#">{text}</a>
+                }
+            },
+            {
+                title: '账号',
+                dataIndex: 'account',
+                key: 'account',
+            },
+            {
+                title: '状态',
+                dataIndex: 'state',
+                key: 'state',
+                render: (text) => {
+                    if(text == 0){
+                        return <span>
+                            <Badge status="success" text="启用" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    } else {
+                        return <span>
+                            <Badge status="error" text="停用" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    }
+                }
+            },
+            {
+                title: '创建时间',
+                dataIndex: 'created_at',
+                key: 'created_at',
+            },
+            {
+                title: '操作',
+                key: 'action',
+                render: (text, record) => {
+                    return <Popconfirm title="确认删除吗?" 
+                                onConfirm={() => {
+                                    dispatch({
+                                        type: 'usermanager/destroy',
+                                        payload: {
+                                            id: record.id,
+                                        }
+                                    })
+                                }} 
+                                onCancel={() => {}} 
+                                okText="是" cancelText="否">
+                        <a>删除</a>
+                    </Popconfirm>
+
+                    return <span>
+                        <a href="javascript:void(0)" onClick={() => {
+                            dispatch({
+                                type: 'usermanager/destroy',
+                                payload: {
+                                    id: record.id,
+                                }
+                            })
+                        }}>删除</a>
+                    </span>
+                }
+            }
+        ]
 
         const searchFormProps = {
             onOk:(data)=>{

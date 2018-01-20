@@ -19,3 +19,13 @@ export async function query(params){
         }
     })
 }
+
+export async function destroy (params) {
+    return request({
+      url: `/api/admin/users/${params.id}`,
+      method: 'delete',
+      data: {
+        ...params
+      }
+    })
+}

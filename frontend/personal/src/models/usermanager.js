@@ -1,5 +1,6 @@
 import {parse} from 'qs';
-import {query} from '../services/user';
+import {query, destroy} from '../services/user';
+import { message } from 'antd'; 
 
 export default {
     namespace: 'usermanager',
@@ -39,6 +40,18 @@ export default {
                         condition: (payload == null ? {} : payload),
                     }
                 })
+            }
+        },
+        * destroy({payload}, {call, put}) {
+            const { message, success } = yield call(destroy, parse(payload));
+            if(success){
+                message.success('删除成功！')
+                yield put({
+                    type: 'query',
+                    payload:{}
+                })
+            } else {
+                message.error(message)
             }
         }
     },
