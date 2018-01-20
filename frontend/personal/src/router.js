@@ -49,6 +49,15 @@ const Routers = function ({ history, app }) {
           }
         },
         {
+          path: 'usermanager',
+          getComponent (nextState, cb) {
+            require.ensure([], (require) => {
+              registerModel(app, require('./models/usermanager'))
+              cb(null, require('./routes/usermanager/'))
+            }, 'usermanager')
+          }
+        },
+        {
           path: 'setting',
           getComponent (nextState, cb) {
             require.ensure([], (require) => {

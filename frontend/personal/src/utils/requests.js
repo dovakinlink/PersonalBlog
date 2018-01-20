@@ -1,5 +1,5 @@
 import axios from 'axios'
-import querystring from 'querystring'
+import qs from 'querystring'
 import jsonp from 'jsonp'
 import {getAuthHeader} from './auth'
 import {getCookie,delCookie} from './helper'

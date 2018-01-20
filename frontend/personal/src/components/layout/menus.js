@@ -44,7 +44,7 @@ class Menus extends React.Component {
             </Link>
           </Menu.Item>
           <Menu.Item key='user_list'>
-            <Link to='/article' style={{color: '#999'}}>
+            <Link to='/usermanager' style={{color: '#999'}}>
               用户管理
             </Link>
           </Menu.Item>

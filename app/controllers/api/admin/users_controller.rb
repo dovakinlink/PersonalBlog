@@ -2,6 +2,21 @@ class Api::Admin::UsersController < ::Api::BaseController
     
     before_action :set_user, only: [:create]
 
+    def index
+        @users = ::Admin::User.order('created_at desc')
+        @users = @users.by_code(params[:code])
+                    .by_username(params[:username])
+                    .by_account(params[:account])
+
+        respond_to do |format|
+            format.json do
+                @total = @users.count
+                @users = @users.page(params[:page]).per(params[:pageSize])
+            end
+        end
+        
+    end
+
     def create
         account = params[:user][:account]
         if account.present?
@@ -12,7 +27,6 @@ class Api::Admin::UsersController < ::Api::BaseController
             user = ::Admin::User.new(user_params)
             # 存储密文密码
             user.password = params[:user][:password]
-            # TODO 暂时不考虑头像上传
             user.avatar = "http://localhost:3000/uploads/avatar/" + avatar_params
             user.code = Utils::Redis.get_code_length_year(5,"YH")
             user.state = 0
@@ -27,8 +41,6 @@ class Api::Admin::UsersController < ::Api::BaseController
             end
         end
     end
-
-
 
     private
 

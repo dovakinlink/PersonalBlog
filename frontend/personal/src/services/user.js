@@ -9,3 +9,13 @@ export async function regist(params){
         }
     })
 }
+
+export async function query(params){
+    return request({
+        url: '/api/admin/users.json',
+        method: 'get',
+        data: {
+            ...params
+        }
+    })
+}

@@ -49,7 +49,6 @@ const BaseForm = ({
             console.log('Received values of form: ', values);
             let formData = getFieldsValue();
             formData.state = isState;
-            debugger
             dispatch({
                 type: 'user/regist',
                 payload: {

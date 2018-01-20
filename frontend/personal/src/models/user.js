@@ -14,12 +14,10 @@ export default {
     },
     effects: {
         *regist({payload}, { call, put }) {
-            debugger
             const data = yield call(regist,payload);
-            debugger
             if(data.success){
                 message.success('注册成功!')
-                yield put(routerRedux.push('/home'))
+                yield put(routerRedux.push('/usermanager'))
                 return
             }
             message.error(data.message)

@@ -7,6 +7,18 @@ class Admin::User < ApplicationRecord
 
     has_many :admin_user_role_relations, :class_name => 'Admin::UserRoleRelation', foreign_key: "user_id"
     before_create :generate_authentication_token
+
+    scope :by_code, ->(code) {
+        where(:code => code) if code.present?
+    }
+
+    scope :by_username, ->(username) {
+        where("username like ? ", username) if username.present?
+    }
+
+    scope :by_account, ->(account) {
+        where("account like ? ", account) if account.present?
+    }
     
     def password
         @password ||= Password.new(password_hash)
