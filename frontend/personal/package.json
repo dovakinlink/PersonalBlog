@@ -18,10 +18,10 @@
     "moment": "^2.18.1",
     "nprogress": "^0.2.0",
     "object-to-formdata": "^1.0.13",
-    "react": "^16.0.0",
+    "react": "^15.6.1",
     "react-cookie": "^2.0.8",
     "react-countup": "^2.1.1",
-    "react-dom": "^16.0.0",
+    "react-dom": "^15.6.1",
     "react-quill": "^1.0.0",
     "react-router": "^4.1.2"
   },
