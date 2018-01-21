@@ -113,7 +113,7 @@ class Article extends React.Component {
                                 ghost={true}
                                 type="primary" icon="plus"
                                 onClick={() => {
-                                    this.props.dispatch(routerRedux.push('/editor'))
+                                    this.props.dispatch(routerRedux.push('/articleeditor'))
                                 }}>
                             </Button>
                         </Col>

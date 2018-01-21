@@ -40,6 +40,15 @@ const Routers = function ({ history, app }) {
           }
         },
         {
+          path: 'articleeditor',
+          getComponent (nextState, cb) {
+            require.ensure([], (require) => {
+              registerModel(app, require('./models/articleeditor'))
+              cb(null, require('./routes/articleeditor/'))
+            }, 'articleeditor')
+          }
+        },
+        {
           path: 'user',
           getComponent (nextState, cb) {
             require.ensure([], (require) => {

@@ -4035,3 +4035,87 @@ Processing by Api::Admin::UsersController#index as JSON
 Completed 200 OK in 44ms (Views: 33.3ms | ActiveRecord: 2.7ms)
 
 
+Started GET "/api/admin/users.json?t=1516506945973" for 127.0.0.1 at 2018-01-21 11:55:46 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516506945973"}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (0.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (7.0ms)
+Completed 200 OK in 82ms (Views: 33.6ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-21 12:33:27 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (26.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1516509207107, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1516509207107}}
+  [1m[36mAdmin::User Load (23.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (22.6ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 3], ["username", "Link"], ["created_at", "2018-01-21 04:33:27.978739"], ["updated_at", "2018-01-21 04:33:27.978739"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 203ms (Views: 0.6ms | ActiveRecord: 92.3ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-21 17:24:51 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb24142b98 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180121-1201-d8zjso.jpg>, @original_filename="7EC2C772-ADBD-43DB-BBE1-4E17F5CB3129-11566-00000942B9491AFB_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"7EC2C772-ADBD-43DB-BBE1-4E17F5CB3129-11566-00000942B9491AFB_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 11ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-21 17:26:41 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb2446a690 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180121-1201-10uy38b.jpg>, @original_filename="16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-21 17:28:50 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fbb1fbdde18 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180121-1201-ignda0.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 200 OK in 23619ms (Views: 19.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-21 17:29:36 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb1fceedc0 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180121-1201-g32388.jpg>, @original_filename="7EC2C772-ADBD-43DB-BBE1-4E17F5CB3129-11566-00000942B9491AFB_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"7EC2C772-ADBD-43DB-BBE1-4E17F5CB3129-11566-00000942B9491AFB_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 37235ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-21 17:31:19 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb24480c38 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180121-1201-1fu0tbq.jpg>, @original_filename="16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 9441ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-21 17:32:45 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb1fd60dd0 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180121-1201-1gpy9ds.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 25496ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-21 17:33:45 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb1fccf998 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180121-1201-7i6f7c.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 5664ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-21 17:34:47 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb22c2a8c8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180121-1201-17r59q9.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 3595ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-21 17:37:54 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb242f58c8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180121-1201-1k7rjbc.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-21 17:38:50 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb24281518 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180121-1201-tfkd15.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
