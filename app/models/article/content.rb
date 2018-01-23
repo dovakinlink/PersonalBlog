@@ -1,3 +1,3 @@
-class Article::Content < ApplicationRecrod
-    belongs_to :article_main, class_name: 'Article::Main', foreign_key: 'article_id'
+class Article::Content < ApplicationRecord
+    # belongs_to :article_mains, class_name: 'Article::Main', foreign_key: 'content_id'
 end

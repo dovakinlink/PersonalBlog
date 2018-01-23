@@ -9,6 +9,7 @@ class AuthenticationService
 
     def call
         begin
+            binding.pry
             result = $redis.mapped_hmget("_pb_session:#{@user[:authentication_token]}","access_time",
                 "authentication_token","account")
         rescue => exception

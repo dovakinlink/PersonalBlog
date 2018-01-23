@@ -16,7 +16,7 @@ class Api::BaseController < ApplicationController
       user = token && ::Admin::User.find_by(authentication_token: token)
 
       if user &&
-        AuthenticationService.call(user,{}) &&
+        # AuthenticationService.call(user,{}) &&
         ActiveSupport::SecurityUtils.secure_compare(user.authentication_token, token)
         self.current_user = user
       end

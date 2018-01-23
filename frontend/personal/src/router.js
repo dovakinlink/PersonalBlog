@@ -75,15 +75,15 @@ const Routers = function ({ history, app }) {
             }, 'setting')
           }
         },
-        {
-          path: 'editor',
-          getComponent (nextState, cb) {
-            require.ensure([], (require) => {
-              registerModel(app, require('./models/editor'))
-              cb(null, require('./routes/editor/'))
-            }, 'editor')
-          }
-        },
+        // {
+        //   path: 'editor',
+        //   getComponent (nextState, cb) {
+        //     require.ensure([], (require) => {
+        //       registerModel(app, require('./models/editor'))
+        //       cb(null, require('./routes/editor/'))
+        //     }, 'editor')
+        //   }
+        // },
       ]
     },
     {

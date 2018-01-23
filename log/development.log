@@ -4119,3 +4119,390 @@ Processing by Api::Upload::FileuploadController#create as */*
 Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-21 19:30:11 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb2414bb80 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180121-1201-18n98tg.jpg>, @original_filename="7EC2C772-ADBD-43DB-BBE1-4E17F5CB3129-11566-00000942B9491AFB_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"7EC2C772-ADBD-43DB-BBE1-4E17F5CB3129-11566-00000942B9491AFB_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 51ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-21 19:38:12 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb202b9020 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180121-1201-nwb73o.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-22 09:42:25 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb22e22090 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180122-1201-brz3qd.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 57ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-22 11:22:08 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb24429ff0 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180122-1201-1h2lk7g.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 39ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-22 11:23:04 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb1fe59f98 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180122-1201-1kqevae.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 23ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/admin/users.json?t=1516591449999" for 127.0.0.1 at 2018-01-22 11:24:10 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516591449999"}
+  [1m[36mAdmin::User Load (2.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (26.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (41.4ms)
+Completed 200 OK in 249ms (Views: 47.5ms | ActiveRecord: 122.8ms)
+
+
+Started GET "/api/admin/users.json?t=1516591492762" for 127.0.0.1 at 2018-01-22 11:24:52 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516591492762"}
+  [1m[36mAdmin::User Load (1.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (2.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (8.6ms)
+Completed 200 OK in 59ms (Views: 45.8ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-22 11:46:26 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb22cb1828 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180122-1201-19b2bwt.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 20ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7501268506759722030);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddHtmlContentToArticleContent (20180122072014)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (26.6ms)[0m  [1m[35mALTER TABLE "article_contents" ADD "htmlcontent" text[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180122072014"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7501268506759722030)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 15:55:08 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516607708669}
+  [1m[36mAdmin::User Load (2.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 558ms (ActiveRecord: 12.5ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 15:57:51 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516607871959}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 48424ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:30:21 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516609821078}
+  [1m[36mAdmin::User Load (2.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 7512ms (ActiveRecord: 2.7ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:30:36 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516609836038}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 97340ms (ActiveRecord: 8.8ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:32:17 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516609937284}
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 26836ms (ActiveRecord: 0.8ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:33:43 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610023370}
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 25657ms (ActiveRecord: 1.0ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:34:28 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610068248}
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 181525ms (ActiveRecord: 8.6ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:37:49 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610269260}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 61937ms (ActiveRecord: 0.5ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:41:35 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610495643}
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 4264ms (ActiveRecord: 0.6ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:41:45 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610505675}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 2778ms (ActiveRecord: 0.7ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:42:41 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610561908}
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 13734ms (ActiveRecord: 0.6ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:43:20 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610600901}
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 572ms (ActiveRecord: 1.0ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:43:56 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610636122}
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 595ms (ActiveRecord: 9.8ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:44:25 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610665660}
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 388ms (ActiveRecord: 0.6ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:45:06 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610706198}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 10740ms (ActiveRecord: 0.5ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:45:36 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610736452}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 20593ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:45:59 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610759495}
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 104842ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/Users/liuhuanchao/DvaProjects/PersonalBlog/app/models/article/main.rb:3: syntax error, unexpected ':', expecting keyword_end
+        dependent: :destory
+                  ^):
+  
+app/models/article/main.rb:3: syntax error, unexpected ':', expecting keyword_end
+app/controllers/api/article/articles_controller.rb:6:in `create'
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/liuhuanchao/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (135.4ms)
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:47:48 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610868102}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 21604ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:48:13 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610893139}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 23113ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:49:28 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516610968340}
+  [1m[36mAdmin::User Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 20014ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:53:59 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516611239044}
+  [1m[36mAdmin::User Load (2.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 69672ms (Views: 0.4ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:55:41 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516611341979}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Unpermitted parameter: content
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 53240ms (Views: 0.3ms | ActiveRecord: 10.4ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:56:50 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516611410129}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+Unpermitted parameter: content
+  [1m[35mSQL (5.4ms)[0m  [1m[32mINSERT INTO "article_mains" ("title", "author", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "文章"], ["author", "Link"], ["author_id", "3"], ["created_at", "2018-01-22 08:57:03.404437"], ["updated_at", "2018-01-22 08:57:03.404437"]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 53679ms (Views: 0.4ms | ActiveRecord: 17.8ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 16:57:46 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516611466566}
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Unpermitted parameter: content
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "article_mains" ("title", "author", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "文章"], ["author", "Link"], ["author_id", "3"], ["created_at", "2018-01-22 08:57:58.598046"], ["updated_at", "2018-01-22 08:57:58.598046"]]
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "article_contents" ("no", "created_at", "updated_at", "htmlcontent") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["no", "WZ2018012200003"], ["created_at", "2018-01-22 08:57:59.310249"], ["updated_at", "2018-01-22 08:57:59.310249"], ["htmlcontent", "<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 20665ms (ActiveRecord: 8.0ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 17:16:26 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"content"=>{"blocks"=>[{"key"=>"cghm", "text"=>"asdfasdf", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[{"offset"=>0, "length"=>8, "style"=>"COLOR-003BA5"}], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}}, "htmlcontent"=>"<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"}, "t"=>1516612586026}
+  [1m[36mAdmin::User Load (7.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Unpermitted parameter: content
+Unpermitted parameter: content
+Unpermitted parameter: content
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "article_mains" ("title", "author", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "文章"], ["author", "Link"], ["author_id", "3"], ["created_at", "2018-01-22 09:17:36.214383"], ["updated_at", "2018-01-22 09:17:36.214383"]]
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "article_contents" ("no", "created_at", "updated_at", "htmlcontent") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["no", "WZ2018012200004"], ["created_at", "2018-01-22 09:17:36.217158"], ["updated_at", "2018-01-22 09:17:36.217158"], ["htmlcontent", "<p><span style=\"color:#003ba5;\">asdfasdf</span></p>"]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 70528ms (ActiveRecord: 14.7ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-22 17:18:50 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"blocks"=>[{"key"=>"c80qv", "text"=>"fffffff", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}, "htmlcontent"=>"<p>fffffff</p>"}, "t"=>1516612730652}
+  [1m[36mAdmin::User Load (3.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+Unpermitted parameters: blocks, entityMap
+Unpermitted parameters: blocks, entityMap
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "article_mains" ("title", "author", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "文章"], ["author", "Link"], ["author_id", "3"], ["created_at", "2018-01-22 09:20:35.569193"], ["updated_at", "2018-01-22 09:20:35.569193"]]
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "article_contents" ("no", "created_at", "updated_at", "htmlcontent") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["no", "WZ2018012200005"], ["created_at", "2018-01-22 09:20:35.572589"], ["updated_at", "2018-01-22 09:20:35.572589"], ["htmlcontent", "<p>fffffff</p>"]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 105293ms (ActiveRecord: 13.2ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-23 11:27:45 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"blocks"=>[{"key"=>"c80qv", "text"=>"fffffff", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}, "htmlcontent"=>"<p>fffffff</p>"}, "t"=>1516678065665}
+  [1m[36mAdmin::User Load (2.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (19.6ms)[0m  [1m[35mBEGIN[0m
+Unpermitted parameters: blocks, entityMap
+Unpermitted parameters: blocks, entityMap
+Unpermitted parameters: blocks, entityMap
+  [1m[35mSQL (13.1ms)[0m  [1m[32mINSERT INTO "article_mains" ("title", "author", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "文章"], ["author", "Link"], ["author_id", "3"], ["created_at", "2018-01-23 03:29:16.155556"], ["updated_at", "2018-01-23 03:29:16.155556"]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "article_contents" ("no", "created_at", "updated_at", "htmlcontent") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["no", "WZ2018012300001"], ["created_at", "2018-01-23 03:29:16.172577"], ["updated_at", "2018-01-23 03:29:16.172577"], ["htmlcontent", "<p>fffffff</p>"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 90712ms (ActiveRecord: 66.2ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-23 11:29:18 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"blocks"=>[{"key"=>"c80qv", "text"=>"fffffff", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}, "htmlcontent"=>"<p>fffffff</p>"}, "t"=>1516678158925}
+  [1m[36mAdmin::User Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.6ms)[0m  [1m[32mINSERT INTO "article_mains" ("title", "author", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "文章"], ["author", "Link"], ["author_id", "3"], ["created_at", "2018-01-23 03:30:25.729364"], ["updated_at", "2018-01-23 03:30:25.729364"]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "article_contents" ("no", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["no", "WZ2018012300002"], ["content", "{\"blocks\"=>[{\"key\"=>\"c80qv\", \"text\"=>\"fffffff\", \"type\"=>\"unstyled\", \"depth\"=>0, \"inlineStyleRanges\"=>[], \"entityRanges\"=>[], \"data\"=>{}}], \"entityMap\"=>{}, \"htmlcontent\"=>\"<p>fffffff</p>\"}"], ["created_at", "2018-01-23 03:30:25.736471"], ["updated_at", "2018-01-23 03:30:25.736471"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 67128ms (ActiveRecord: 78.4ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-23 11:32:10 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"blocks"=>[{"key"=>"c80qv", "text"=>"fffffff", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}, "htmlcontent"=>"<p>fffffff</p>"}, "t"=>1516678330394}
+  [1m[36mAdmin::User Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "article_mains" ("title", "author", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "文章"], ["author", "Link"], ["author_id", "3"], ["created_at", "2018-01-23 03:32:41.139540"], ["updated_at", "2018-01-23 03:32:41.139540"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "article_contents" ("no", "content", "created_at", "updated_at", "htmlcontent") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["no", "WZ2018012300003"], ["content", "{\"blocks\"=>[{\"key\"=>\"c80qv\", \"text\"=>\"fffffff\", \"type\"=>\"unstyled\", \"depth\"=>0, \"inlineStyleRanges\"=>[], \"entityRanges\"=>[], \"data\"=>{}}], \"entityMap\"=>{}, \"htmlcontent\"=>\"<p>fffffff</p>\"}"], ["created_at", "2018-01-23 03:32:41.141315"], ["updated_at", "2018-01-23 03:32:41.141315"], ["htmlcontent", "<p>fffffff</p>"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 31040ms (ActiveRecord: 3.8ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-23 11:33:48 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"blocks"=>[{"key"=>"c80qv", "text"=>"fffffff", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{}, "htmlcontent"=>"<p>fffffff</p>"}, "t"=>1516678428526}
+  [1m[36mAdmin::User Load (1.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "article_mains" ("title", "author", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "文章"], ["author", "Link"], ["author_id", "3"], ["created_at", "2018-01-23 03:34:04.552344"], ["updated_at", "2018-01-23 03:34:04.552344"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "article_contents" ("no", "content", "created_at", "updated_at", "htmlcontent") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["no", "WZ2018012300004"], ["content", "{\"blocks\"=>[{\"key\"=>\"c80qv\", \"text\"=>\"fffffff\", \"type\"=>\"unstyled\", \"depth\"=>0, \"inlineStyleRanges\"=>[], \"entityRanges\"=>[], \"data\"=>{}}], \"entityMap\"=>{}, \"htmlcontent\"=>\"<p>fffffff</p>\"}"], ["created_at", "2018-01-23 03:34:04.557337"], ["updated_at", "2018-01-23 03:34:04.557337"], ["htmlcontent", "<p>fffffff</p>"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 16390ms (ActiveRecord: 6.8ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-23 11:35:11 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb60cf91f8 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180123-14345-1t9c1.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 23ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-23 11:35:15 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"文章"}, "content"=>{"blocks"=>[{"key"=>"c80qv", "text"=>"这是一次正规测试", "type"=>"unordered-list-item", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[], "data"=>{}}, {"key"=>"bgn47", "text"=>"", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[], "data"=>{}}, {"key"=>"5nc98", "text"=>"", "type"=>"atomic", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[{"offset"=>0, "length"=>1, "key"=>0}], "data"=>{}}, {"key"=>"59r4c", "text"=>"", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{"0"=>{"type"=>"IMAGE", "mutability"=>"IMMUTABLE", "data"=>{"url"=>"http://localhost:3000/uploads/avatar/F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", "name"=>"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", "type"=>"IMAGE"}}}, "htmlcontent"=>"<ul><li>这是一次正规测试</li></ul><p></p><div class=\"media-wrap image-wrap\"><img src=\"http://localhost:3000/uploads/avatar/F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"/></div><p></p>"}, "t"=>1516678515624}
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "article_contents" ("no", "content", "created_at", "updated_at", "htmlcontent") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["no", "WZ2018012300005"], ["content", "{\"blocks\"=>[{\"key\"=>\"c80qv\", \"text\"=>\"这是一次正规测试\", \"type\"=>\"unordered-list-item\", \"depth\"=>0, \"inlineStyleRanges\"=>[], \"entityRanges\"=>[], \"data\"=>{}}, {\"key\"=>\"bgn47\", \"text\"=>\"\", \"type\"=>\"unstyled\", \"depth\"=>0, \"inlineStyleRanges\"=>[], \"entityRanges\"=>[], \"data\"=>{}}, {\"key\"=>\"5nc98\", \"text\"=>\"\", \"type\"=>\"atomic\", \"depth\"=>0, \"inlineStyleRanges\"=>[], \"entityRanges\"=>[{\"offset\"=>0, \"length\"=>1, \"key\"=>0}], \"data\"=>{}}, {\"key\"=>\"59r4c\", \"text\"=>\"\", \"type\"=>\"unstyled\", \"depth\"=>0, \"inlineStyleRanges\"=>[], \"entityRanges\"=>[], \"data\"=>{}}], \"entityMap\"=>{\"0\"=>{\"type\"=>\"IMAGE\", \"mutability\"=>\"IMMUTABLE\", \"data\"=>{\"url\"=>\"http://localhost:3000/uploads/avatar/F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\", \"name\"=>\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\", \"type\"=>\"IMAGE\"}}}, \"htmlcontent\"=>\"<ul><li>这是一次正规测试</li></ul><p></p><div class=\\\"media-wrap image-wrap\\\"><img src=\\\"http://localhost:3000/uploads/avatar/F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\\\"/></div><p></p>\"}"], ["created_at", "2018-01-23 03:35:15.700378"], ["updated_at", "2018-01-23 03:35:15.700378"], ["htmlcontent", "<ul><li>这是一次正规测试</li></ul><p></p><div class=\"media-wrap image-wrap\"><img src=\"http://localhost:3000/uploads/avatar/F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"/></div><p></p>"]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "article_mains" ("title", "author", "author_id", "content_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "文章"], ["author", "Link"], ["author_id", "3"], ["content_id", 8], ["created_at", "2018-01-23 03:35:15.722009"], ["updated_at", "2018-01-23 03:35:15.722009"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 620ms (ActiveRecord: 33.3ms)
+
+

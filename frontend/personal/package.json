@@ -5,14 +5,16 @@
   "dependencies": {
     "antd": "2.12.2",
     "axios": "^0.16.2",
+    "backdraft-js": "0.0.1",
+    "braft-editor": "^1.1.10",
     "classnames": "^2.2.5",
     "draft-js": "^0.10.4",
+    "draft-js-export-html": "^1.2.0",
     "dva": "^1.2.1",
     "dva-loading": "^0.2.1",
     "echarts-for-react": "^1.4.4",
     "google-map-react": "^0.24.0",
     "hommilyeditor": "^3.2.3",
-    "braft-editor":"^1.1.10",
     "js-cookie": "^2.2.0",
     "jsonp": "^0.2.1",
     "lodash": "^4.17.4",
@@ -24,8 +26,8 @@
     "react-cookie": "^2.0.8",
     "react-countup": "^2.1.1",
     "react-dom": "^15.6.1",
-    "react-quill": "^1.0.0",
-    "react-router": "^4.1.2"
+    "react-router": "^4.1.2",
+    "redraft": "^0.9.0"
   },
   "devDependencies": {
     "atool-build": "^1.0.0",
