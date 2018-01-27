@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { connect } from 'dva'
 import { routerRedux } from 'dva/router'
-import {Card } from 'antd'
+import {Card, Input, Select} from 'antd'
 import Draft from 'draft-js'
 import BraftEditor from 'braft-editor'
 import 'braft-editor/dist/braft.css'
@@ -15,7 +15,7 @@ class Articleeditor extends React.Component {
 
     const backdraft = require('backdraft-js');
     const { articleeditor, dispatch } = this.props
-    const { htmlContent, content } = articleeditor
+    const { title, htmlContent, content } = articleeditor
     const handleChange = (content) => {
       dispatch({
         type: 'articleeditor/update',
@@ -112,7 +112,7 @@ class Articleeditor extends React.Component {
                 type: 'articleeditor/create',
                 payload: {
                   article:{
-                    title: '文章'
+                    title: title,
                   },
                   content:{
                     ...content,
@@ -136,6 +136,27 @@ class Articleeditor extends React.Component {
     return (
       <div>
         <Card>
+          {/* <Select
+             mode="combobox"
+             placeholder="请输入文章标题" 
+             defaultActiveFirstOption={false}
+             showArrow={false}
+             filterOption={false}
+             /> */}
+          <Input 
+            placeholder="请输入文章标题"
+            onChange={(evt) => {
+              console.log(evt.target.value)
+              dispatch({
+                type: 'articleeditor/update',
+                payload: {
+                  title: evt.target.value
+                }
+              })
+            }}
+            />
+        </Card>
+        <Card style={{marginTop: 15}}>
           <div>
             <BraftEditor {...editorProps} />
           </div>

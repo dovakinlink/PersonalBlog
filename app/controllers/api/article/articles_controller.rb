@@ -1,5 +1,18 @@
 class Api::Article::ArticlesController < Api::BaseController
 
+    def index
+        @article = ::Article::Main.order("created_at desc")
+        @article = @article.by_title(params[:title])
+                        .by_author(params[:author])
+
+        respond_to do |format|
+            format.json do
+                @total = @article.count
+                @article = @article.page(params[:page]).per(params[:pageSize])
+            end
+        end
+    end
+
     def create
         begin
             ::Article::Main.transaction do 
@@ -15,17 +28,14 @@ class Api::Article::ArticlesController < Api::BaseController
                 article_main.author_id = current_user.id
                 article_main.save!
             end
+            api_success({message: "文章发布成功", status: 200, success: true})
         rescue => exception
-            api_error({message: exception.message})
+            api_error({message: exception.message, status: 200, success: false})
         end
     end
 
     private 
     def article_params
         params.require(:article).permit(::Article::Main.attribute_names)    
-    end
-
-    def content_params
-        params.require(:content).permit(::Article::Content.attribute_names)
     end
 end 

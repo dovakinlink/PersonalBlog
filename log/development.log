@@ -4506,3 +4506,165 @@ No template found for Api::Article::ArticlesController#create, rendering head :n
 Completed 204 No Content in 620ms (ActiveRecord: 33.3ms)
 
 
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-23 15:48:47 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb60cc4570 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180123-14345-1sltr12.jpg>, @original_filename="16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 36ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/article/articles" for 127.0.0.1 at 2018-01-23 15:48:54 +0800
+Processing by Api::Article::ArticlesController#create as JSON
+  Parameters: {"article"=>{"title"=>"论拍照姿势的重要性"}, "content"=>{"blocks"=>[{"key"=>"55pjt", "text"=>"拍照就应该这么拍", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[], "data"=>{}}, {"key"=>"5tb2s", "text"=>"", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[], "data"=>{}}, {"key"=>"8uf3j", "text"=>"", "type"=>"atomic", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[{"offset"=>0, "length"=>1, "key"=>0}], "data"=>{}}, {"key"=>"3vo50", "text"=>"", "type"=>"unstyled", "depth"=>0, "inlineStyleRanges"=>[], "entityRanges"=>[], "data"=>{}}], "entityMap"=>{"0"=>{"type"=>"IMAGE", "mutability"=>"IMMUTABLE", "data"=>{"url"=>"http://localhost:3000/uploads/avatar/16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg", "name"=>"16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg", "type"=>"IMAGE"}}}, "htmlcontent"=>"<p>拍照就应该这么拍</p><p></p><div class=\"media-wrap image-wrap\"><img src=\"http://localhost:3000/uploads/avatar/16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg\"/></div><p></p>"}, "t"=>1516693734329}
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "article_contents" ("no", "content", "created_at", "updated_at", "htmlcontent") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["no", "WZZW2018012300001"], ["content", "{\"blocks\"=>[{\"key\"=>\"55pjt\", \"text\"=>\"拍照就应该这么拍\", \"type\"=>\"unstyled\", \"depth\"=>0, \"inlineStyleRanges\"=>[], \"entityRanges\"=>[], \"data\"=>{}}, {\"key\"=>\"5tb2s\", \"text\"=>\"\", \"type\"=>\"unstyled\", \"depth\"=>0, \"inlineStyleRanges\"=>[], \"entityRanges\"=>[], \"data\"=>{}}, {\"key\"=>\"8uf3j\", \"text\"=>\"\", \"type\"=>\"atomic\", \"depth\"=>0, \"inlineStyleRanges\"=>[], \"entityRanges\"=>[{\"offset\"=>0, \"length\"=>1, \"key\"=>0}], \"data\"=>{}}, {\"key\"=>\"3vo50\", \"text\"=>\"\", \"type\"=>\"unstyled\", \"depth\"=>0, \"inlineStyleRanges\"=>[], \"entityRanges\"=>[], \"data\"=>{}}], \"entityMap\"=>{\"0\"=>{\"type\"=>\"IMAGE\", \"mutability\"=>\"IMMUTABLE\", \"data\"=>{\"url\"=>\"http://localhost:3000/uploads/avatar/16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg\", \"name\"=>\"16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg\", \"type\"=>\"IMAGE\"}}}, \"htmlcontent\"=>\"<p>拍照就应该这么拍</p><p></p><div class=\\\"media-wrap image-wrap\\\"><img src=\\\"http://localhost:3000/uploads/avatar/16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg\\\"/></div><p></p>\"}"], ["created_at", "2018-01-23 07:48:54.413836"], ["updated_at", "2018-01-23 07:48:54.413836"], ["htmlcontent", "<p>拍照就应该这么拍</p><p></p><div class=\"media-wrap image-wrap\"><img src=\"http://localhost:3000/uploads/avatar/16C23D94-D347-4516-B3E3-322FB1F95F13-11566-0000094309BEBAB5_tmp.jpg\"/></div><p></p>"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "article_mains" ("no", "title", "author", "author_id", "content_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["no", "WZ2018012300006"], ["title", "论拍照姿势的重要性"], ["author", "Link"], ["author_id", "3"], ["content_id", 9], ["created_at", "2018-01-23 07:48:54.447739"], ["updated_at", "2018-01-23 07:48:54.447739"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::Article::ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 549ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/api/admin/users.json?t=1516694016378" for 127.0.0.1 at 2018-01-23 15:53:36 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516694016378"}
+  [1m[36mAdmin::User Load (0.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (8.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (44.6ms)
+Completed 200 OK in 123ms (Views: 65.1ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/api/admin/users.json?t=1516694063847" for 127.0.0.1 at 2018-01-23 15:54:23 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516694063847"}
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (1.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (4.3ms)
+Completed 200 OK in 54ms (Views: 41.5ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/admin/users.json?t=1516694152195" for 127.0.0.1 at 2018-01-23 15:55:52 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516694152195"}
+  [1m[36mAdmin::User Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (1.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (6.6ms)
+Completed 200 OK in 47ms (Views: 36.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/admin/users.json?t=1516695043115" for 127.0.0.1 at 2018-01-23 16:10:43 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516695043115"}
+  [1m[36mAdmin::User Load (1.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (10.4ms)
+Completed 200 OK in 62ms (Views: 34.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/admin/users.json?t=1516697166954" for 127.0.0.1 at 2018-01-23 16:46:07 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516697166954"}
+  [1m[36mAdmin::User Load (1.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (9.5ms)
+Completed 200 OK in 61ms (Views: 34.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/admin/users.json?t=1516697171001" for 127.0.0.1 at 2018-01-23 16:46:11 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516697171001"}
+  [1m[36mAdmin::User Load (1.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (2.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (6.7ms)
+Completed 200 OK in 48ms (Views: 36.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/admin/users.json?t=1516875769482" for 127.0.0.1 at 2018-01-25 18:22:49 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516875769482"}
+  [1m[36mAdmin::User Load (29.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (26.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (39.8ms)
+Completed 200 OK in 131ms (Views: 43.3ms | ActiveRecord: 56.4ms)
+
+
+Started POST "/api/upload/fileupload" for 127.0.0.1 at 2018-01-25 18:24:33 +0800
+Processing by Api::Upload::FileuploadController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fbb601e7940 @tempfile=#<Tempfile:/var/folders/hj/vm2q2p_j45d4d92js46b3f7w0000gn/T/RackMultipart20180125-14345-q5yvfl.jpg>, @original_filename="F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"F62CDF61-7B25-4B32-B60A-2D0617CA1C65-11566-00000942FAB96F3C_tmp.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 200 OK in 38ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/admin/users.json?t=1516875941000" for 127.0.0.1 at 2018-01-25 18:25:41 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516875941000"}
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (5.1ms)
+Completed 200 OK in 45ms (Views: 35.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/admin/users.json?t=1516875945229" for 127.0.0.1 at 2018-01-25 18:25:45 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516875945229"}
+  [1m[36mAdmin::User Load (2.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (4.3ms)
+Completed 200 OK in 54ms (Views: 42.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/api/admin/users.json?t=1516875969120" for 127.0.0.1 at 2018-01-25 18:26:09 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1516875969120"}
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (4.5ms)
+Completed 200 OK in 48ms (Views: 38.2ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-27 20:33:48 +0800
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1517056427899, "session"=>{"user"=>{"account"=>"18539902046", "password"=>"[FILTERED]"}, "t"=>1517056427899}}
+  [1m[36mAdmin::User Load (31.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "18539902046"], ["LIMIT", 1]]
+  [1m[35m (6.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (59.1ms)[0m  [1m[32mINSERT INTO "admin_user_logs" ("ip", "user_id", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["ip", "127.0.0.1"], ["user_id", 3], ["username", "Link"], ["created_at", "2018-01-27 12:33:48.588584"], ["updated_at", "2018-01-27 12:33:48.588584"]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 412ms (Views: 1.8ms | ActiveRecord: 221.4ms)
+
+
+Started GET "/api/admin/users.json?t=1517056448847" for 127.0.0.1 at 2018-01-27 20:34:08 +0800
+Processing by Api::Admin::UsersController#index as JSON
+  Parameters: {"t"=>"1517056448847"}
+  [1m[36mAdmin::User Load (7.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."authentication_token" = $1 LIMIT $2[0m  [["authentication_token", "9FSBnKdZo4cBHr8Sf8W0dZQUhUc3ZzawdF46WmjXlMu5s5DR6ka7iCPLmmppPZTHAgN6qwAV7WbzhctZ6/cPQA=="], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendering api/admin/users/index.json.jbuilder
+  [1m[36mAdmin::User Load (12.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered api/admin/users/index.json.jbuilder (47.3ms)
+Completed 200 OK in 101ms (Views: 65.0ms | ActiveRecord: 21.6ms)
+
+
+Started POST "/api/admin/sessions" for 127.0.0.1 at 2018-01-27 22:59:30 +0800
+Processing by Api::Admin::SessionsController#create as JSON
+  Parameters: {"user"=>{"account"=>"admin", "password"=>"[FILTERED]"}, "t"=>1517065170829, "session"=>{"user"=>{"account"=>"admin", "password"=>"[FILTERED]"}, "t"=>1517065170829}}
+  [1m[36mAdmin::User Load (1.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."account" = $1 LIMIT $2[0m  [["account", "admin"], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 2.2ms | ActiveRecord: 1.7ms)
+
+

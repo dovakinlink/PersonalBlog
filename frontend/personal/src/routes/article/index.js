@@ -108,7 +108,7 @@ class Article extends React.Component {
                         <Col>
                             <SearchForm {...searchFormProps} />
                         </Col>
-                        <Col>
+                        {/* <Col>
                             <Button 
                                 ghost={true}
                                 type="primary" icon="plus"
@@ -116,10 +116,10 @@ class Article extends React.Component {
                                     this.props.dispatch(routerRedux.push('/articleeditor'))
                                 }}>
                             </Button>
-                        </Col>
+                        </Col> */}
                     </Row>
                 </Card>
-                <Card>
+                <Card style={{marginTop: 15}}>
                     <Table 
                         columns={columns}
                         dataSource={data}

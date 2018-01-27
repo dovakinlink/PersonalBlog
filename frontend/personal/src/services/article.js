@@ -9,3 +9,13 @@ export async function create(params){
         }
     })
 }
+
+export async function query(params){
+    return request({
+        url: '/api/article/articles',
+        method: 'get',
+        data: {
+            ...params
+        }
+    })
+}

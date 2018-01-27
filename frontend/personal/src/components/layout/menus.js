@@ -31,9 +31,14 @@ class Menus extends React.Component {
           </Link>
         </Menu.Item>
         <SubMenu key='manage' title={<span><Icon type='bars'/>模块</span>}>
+          <Menu.Item key='articleeditor'>
+            <Link to='/articleeditor' style={{color: '#999'}}>
+              文章新增
+            </Link>
+          </Menu.Item>
           <Menu.Item key='article'>
             <Link to='/article' style={{color: '#999'}}>
-              文章
+              文章管理
             </Link>
           </Menu.Item>
         </SubMenu>
