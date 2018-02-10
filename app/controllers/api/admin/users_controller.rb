@@ -11,6 +11,8 @@ class Api::Admin::UsersController < ::Api::BaseController
         respond_to do |format|
             format.json do
                 @total = @users.count
+                @page = params[:current]
+                @pageSize = params[:pageSize]
                 @users = @users.page(params[:page]).per(params[:pageSize])
             end
         end

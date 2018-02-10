@@ -4,12 +4,27 @@ class Api::Article::ArticlesController < Api::BaseController
         @article = ::Article::Main.order("created_at desc")
         @article = @article.by_title(params[:title])
                         .by_author(params[:author])
-
         respond_to do |format|
             format.json do
                 @total = @article.count
+                @page = params[:page]
+                @pageSize = params[:pageSize]
                 @article = @article.page(params[:page]).per(params[:pageSize])
             end
+        end
+    end
+
+    def destroy
+        begin
+            article = ::Article::Main.find(params[:id])
+            if article
+                content = ::Article::Content.find(article.content_id)
+                content.destroy!
+            end
+            article.destroy!
+            api_success({message: "删除成功", success: true, status: 200})
+        rescue => exception
+            api_error({message: exception.message, success: false, status: 200})
         end
     end
 
